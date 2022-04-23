@@ -8,8 +8,8 @@ const {
 const router = express.Router();
 const Post = require("../models/postModel");
 
-router.post("/admin/post", addPost);
-router.get("/admin/get", getPost);
-router.put("/admin/put", updatePost);
-router.delete("/admin/delete", deletePost);
+router.post("/", addPost);
+router.get("/", getPost);
+router.put("/", updatePost);
+router.delete("/", deletePost);
 module.exports = router;
