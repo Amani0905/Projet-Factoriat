@@ -27,13 +27,8 @@ exports.getPost = (req, res) => {
 //@desc update a post
 //@path PUT /api/post
 //@access PUBLIC
-const idPost1 = "***************";
 exports.updatePost = (req, res) => {
-  Person.findOneAndUpdate(
-    { _id: idPost1 },
-    { content: "new content" },
-    { new: true }
-  )
+  Person.findOneAndUpdate(req.params.id, req.body, { new: true })
     .then((data) => res.json(data))
     .catch((err) => {
       console.log(err);
@@ -44,9 +39,8 @@ exports.updatePost = (req, res) => {
 //@desc delete a post
 //@path DELETE/api/post
 //@access PUBLIC
-const idPost2 = "**************";
 exports.deletePost = (req, res) => {
-  Person.findByIdAndRemove({ _id: idPost2 })
+  Person.findByIdAndRemove(req.params.id)
     .then((data) => res.json(data))
     .catch((err) => {
       console.log(err);
