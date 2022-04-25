@@ -15,7 +15,7 @@ exports.addPost = (req, res) => {
 // @desc get a post (Find all in Database(Find))
 // @path GET/api/post
 // @access PUBLIC
-exports.getPost = (req, res) => {
+exports.getPost = (req,res) => {
   Post.find()
     .then((data) => res.json(data))
     .catch((err) => {
@@ -28,7 +28,7 @@ exports.getPost = (req, res) => {
 //@path PUT /api/post
 //@access PUBLIC
 exports.updatePost = (req, res) => {
-  Person.findOneAndUpdate(req.params.id, req.body, { new: true })
+  Post.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
     .then((data) => res.json(data))
     .catch((err) => {
       console.log(err);
@@ -40,7 +40,7 @@ exports.updatePost = (req, res) => {
 //@path DELETE/api/post
 //@access PUBLIC
 exports.deletePost = (req, res) => {
-  Person.findByIdAndRemove(req.params.id)
+  Post.findByIdAndRemove(req.params.id)
     .then((data) => res.json(data))
     .catch((err) => {
       console.log(err);
