@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+
+/* Navbar section starting below */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.highlight {
+    padding: 0;
+    background-color: #111;
+}
+
+.nav__logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav__logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nav__logo a:hover {
+    color: #00E676;
+}
+
+.nav__wrapper {
+    height: 65px;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__wrapper__list {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__wrapper__list__item {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav__wrapper__list__item a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1.8rem;
+}
+
+.nav__wrapper__list__item a:hover {
+    color: #00F676;
+}
+
+.nav__toggle-btn {
+    display: none;
+}
+
+
+/* Media qurey section related to Navbar Section */
+
+@media screen and (max-width:768px) {
+    .nav__toggle-btn {
+        display: block;
+    }
+    .nav__wrapper {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav__wrapper--visible {
+        height: auto;
+        display: none;
+        margin-top: -4px;
+    }
+    .nav__wrapper__list {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /* same background-color as navbar */
+        background-position: center top;
+    }
+    .nav__wrapper__list__item {
+        width: 100%;
+        text-align: right;
+    }
+    .nav__wrapper__list__item a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .nav__logo a {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Home section starting below */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/Capture.PNG');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro__align {
+    margin-top: 5rem;
+}
+
+.intro__align__title {
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 6px;
+}
+
+.intro__align__sub-title {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+/* Medium Devices, Desktops */
+
+@media screen and (max-width:992px) {}
+
+
+/* Small Devices, Tablets */
+
+@media screen and (max-width:768px) {
+    .intro__align__title {
+        font-size: 3.5rem;
+        font-weight: lighter;
+        color: #fff;
+    }
+    .intro__align__sub-title {
+        font-size: 2.5rem;
+        font-weight: lighter;
+        color: #fff;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .intro__align__title {
+        font-size: 2.8rem;
+    }
+    .intro__align__sub-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .intro__align__title {
+        letter-spacing: 4px;
+    }
+}
+.pads {
+	padding-left:18%;
+	padding-right:18%;
+}
+.text {
+	font-size: 25px;
+	text-align:justify;
+}
+@media only screen and (max-width: 320px) {
+.pads {
+	padding-left: 8px;
+	padding-right: 8px;
+	}
+}
+/* Animation */
+
+.nav__toggle-btn {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.nav__toggle-btn i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.nav__toggle-btn i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.nav__toggle-btn i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.nav__toggle-btn i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.nav__toggle-btn.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.nav__toggle-btn.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.nav__toggle-btn.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}

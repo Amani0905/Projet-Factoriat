@@ -3,7 +3,7 @@
 [ FONT ]*/
 
 @font-face {
-    font-family: Ubuntu-Bold;
+    font-family: Ubuntu-Bold ;
     src: url('../styles/fonts/ubuntu/Ubuntu-Bold.ttf');
  
   }
@@ -26,7 +26,7 @@
   
   /*---------------------------------------------*/
   a {
-      font-family: Ubuntu-Bold;
+      font-family: Ubuntu-Bold ;
       font-size: 14px;
       line-height: 1.7;
       color: #666666;
@@ -324,7 +324,7 @@
       color: whitesmoke;
       font-family: Ubuntu-Bold, sans-serif;
       text-align: justify;
-      font-size:  smaller;;
+      
   }
   
   /*------------------------------------------------------------------
