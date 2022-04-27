@@ -34,26 +34,7 @@ alert("If you agree with the terms, check the Agree check box");
   };
 
   return (
-  //   <div>
-  //     Contact
-  //     <form ref={form} onSubmit={sendEmail}>
-  //       <label>Nom</label>
-  //       <input type="text" name="name" />
-  //       <label>Prénom</label>
-  //       <input type="text" name="Prénom" />
-  //       <label>Email</label>
-  //       <input type="text" name="email" />
-  //       <label>Ville</label>
-  //       <input type="text" name="ville" />
-  //       <label>Téléphone</label>
-  //       <input type="Number" name="téléphone" />
-  //       <label>Message</label>
-  //       <textarea name="message" />
-  //       <input type="submit" value="Send" />
-  //       {result ? <h1>msg envoyé</h1> : null}
-  //     </form>
-  //   </div>
-  // );
+  
   <div className="container-contact100">
   <div className="wrap-contact100">
     <form className="contact100-form validate-form"ref={form} onSubmit={sendEmail}>

@@ -156,6 +156,7 @@
     background-color: black;
     border-radius: 10px;
     margin-top: 100px;
+    /*margin-left: 400px;
     /* border-style: solid;
     border-radius: 15px;
     border-color: white; */
@@ -321,9 +322,10 @@
   
   
   .checkbox{
-      color: whitesmoke;
+      color: white;
       font-family: Ubuntu-Bold, sans-serif;
-      text-align: justify;
+      font-size:12px;
+      text-align: justify!important;
       
   }
   
