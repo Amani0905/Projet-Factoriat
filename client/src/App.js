@@ -3,7 +3,6 @@ import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
 import { Routes,Route } from "react-router-dom";
 import Footer from "./Components/Footer";
-import FooterTest from "./Components/Footer";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <Route />
         <Route exact path='/Technoriat/contact' element={<Contact/>}/>
       </Routes>
-      <FooterTest/>
+      <Footer/>
     </div>
   );
 }

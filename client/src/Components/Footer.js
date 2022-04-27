@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Footer.css'
 
-const FooterTest = () => {
+const Footer = () => {
   return (
     <div><footer class="footer-distributed">
 
@@ -26,4 +26,4 @@ const FooterTest = () => {
   )
 }
 
-export default FooterTest
+export default Footer
