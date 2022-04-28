@@ -68,17 +68,21 @@
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px;
-  margin: 15px 0 0px;
+  margin: 15px 0 10px;
 }
 
 .our_team .team_member span{
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .our_team .team_member p{
   margin-top: 20px;
+
   font-size: 14px;
   line-height: 20px;
+  color: #ffc80a;
+  
+
 }
 
 .our_team .team_member .member_img .social_media{
@@ -93,7 +97,7 @@
   justify-content: center;
   align-items: center;
   transform: scale(0);
-   transition: all 0.5s ease;
+   transition: all 0.7s ease;
 }
 
 .our_team .team_member .member_img .social_media .item{
