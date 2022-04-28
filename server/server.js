@@ -9,7 +9,8 @@ app.use(cors({ origin: true }));
 
 //Routes
 app.use("/api/person", require("./routes/personRoutes"));
-app.use("/admin/api/posts", require("./routes/postRoutes"));
+app.use("/admin/api/posts",require("./routes/postRoutes"));
+
 
 //connection to database
 const connectDB = require("./config/connectDB");
