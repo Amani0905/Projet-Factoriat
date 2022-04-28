@@ -1,23 +1,43 @@
-import { REGISTER_FAIL, REGISTER_SUCCESS } from "../actions/types";
+import {
+  LOGIN_FAIL,
+  LOGIN_SUCCESS,
+  LOGOUT,
+  REGISTER_FAIL,
+  REGISTER_SUCCESS,
+} from "../actions/types";
 
 const initState = {
-  userInfo: {},
-  token: null,
+  userInfo: JSON.parse(localStorage.getItem("personInfo")) || {},
+  token: localStorage.getItem("token") || null,
   errors: null,
-  isAuth: false,
+  isAuth: Boolean(localStorage.getItem("isAuth")) || false,
 };
 const PersonReducer = (state = initState, { type, payload }) => {
   switch (type) {
     case REGISTER_FAIL:
+    case LOGIN_FAIL:
       return { ...state, errors: payload };
     case REGISTER_SUCCESS:
       return {
         ...state,
         personInfo: payload.newPerson,
+        errors: null,
+      };
+    case LOGIN_SUCCESS:
+      localStorage.setItem("token", payload.token);
+      localStorage.setItem("isAuth", true);
+      localStorage.setItem("personInfo", JSON.stringify(payload.existUser));
+
+      return {
+        ...state,
+        personInfo: payload.existUser,
         token: payload.token,
         isAuth: true,
         errors: null,
       };
+    case LOGOUT:
+      localStorage.clear();
+      return { ...state, token: null, userInfo: {}, isAuth: false };
     default:
       return state;
   }

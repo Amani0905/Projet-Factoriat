@@ -4,6 +4,7 @@ import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login />} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/Profil" element={<Profil />} />
+        </Route>
       </Routes>
     </div>
   );
