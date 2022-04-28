@@ -7,10 +7,9 @@ const {
 } = require("../controllers/postControllers");
 const router = express.Router();
 
-
 router.post("/", addPost);
 router.get("/", getPost);
-router.put("/:id", updatePost);
-router.delete("/:id", deletePost);
+router.put("/:PostId", updatePost);
+router.delete("/:PostId", deletePost);
 
 module.exports = router;

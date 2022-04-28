@@ -3,10 +3,14 @@ const app = express();
 const dotenv = require("dotenv");
 dotenv.config();
 app.use(express.json());
+const cors = require("cors");
+//app.use = cors("http://localhost:5000");//
+app.use(cors({ origin: true }));
 
 //Routes
 app.use("/api/person", require("./routes/personRoutes"));
-app.use("/admin/api/posts",require("./routes/postRoutes"))
+app.use("/admin/api/posts",require("./routes/postRoutes"));
+
 
 //connection to database
 const connectDB = require("./config/connectDB");
