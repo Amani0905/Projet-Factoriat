@@ -10,6 +10,7 @@ exports.addPost = async (req, res) => {
   } catch (error) {
     res.status(500).json({ msg: "something went wrong" });
   }
+
 };
 
 // @desc get a post (Find all in Database(Find))

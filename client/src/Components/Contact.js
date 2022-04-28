@@ -5,7 +5,7 @@ const Contact = () => {
   const [result, setResult] = useState(false);
   const form = useRef();
   
-
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -75,6 +75,7 @@ alert("If you agree with the terms, check the Agree check box");
   </div>
 </div>
 );
+
 };
 
 export default Contact;
