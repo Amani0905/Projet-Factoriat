@@ -8,12 +8,12 @@ const Login = () => {
   const dispatch = useDispatch();
   const nav = useNavigate();
   const { register, handleSubmit } = useForm();
-  const { isAuth, errors } = useSelector((state) => state.person);
+  const { isAuth, errors } = useSelector((state) => state.user);
   useEffect(() => {
-    if (isAuth) nav("/Profil");
+    if (isAuth) nav("/Technoriat/Profil");
   }, [isAuth, nav]);
   const loginPerson = (data) => {
-    dispatch(loginAction(data));
+    dispatch(loginAction(data, nav));
   };
   return (
     <div>
@@ -22,7 +22,7 @@ const Login = () => {
         <input required type="email" {...register("email")}></input>
         <br />
         <label>passeword</label>
-        <input required type="passeword" {...register("passeword")}></input>
+        <input required type="password" {...register("password")}></input>
         <br />
         {errors && <p>{errors}</p>}
         <button>Login</button>
