@@ -8,7 +8,7 @@ const Register = () => {
   const dispatch = useDispatch();
   const nav = useNavigate();
   const { register, handleSubmit } = useForm();
-  const { isAuth } = useSelector((state) => state.person.personInfo);
+  const { isAuth } = useSelector((state) => state.user);
   // useEffect(() => {
   //   if (isAuth) nav("/Login");
   // }, [isAuth, nav]);
@@ -24,10 +24,10 @@ const Register = () => {
         <input required type="email" {...register("email")}></input>
         <br />
         <label>passeword</label>
-        <input required type="passeword" {...register("passeword")}></input>
+        <input required type="password" {...register("password")}></input>
         <br />
         <label>address</label>
-        <input required type="text" {...register("adress")}></input>
+        <input required type="text" {...register("address")}></input>
         <br />
         <button>Register</button>
       </form>
