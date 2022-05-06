@@ -6,14 +6,22 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Profil from "./Pages/Profil"
-import Equipe from "./Pages/Equipe";
+import TeamP from "./Pages/TeamP";
+import Technoriat from "./Pages/Technoriat";
+import FactoriatP from "./Pages/FactoriatP";
+
+
+
 
 function App() {
   return (
     <div>
       <Navbar/>
       <Routes>
-        <Route path='/Technoriat/equipe' element={<Equipe/>}/>
+      
+        <Route path='/Technoriat/Technoriat' element={<Technoriat/>}/>  
+        <Route path='/Technoriat/equipe' element={<TeamP/>}/>
+        <Route path='/Technoriat/Factoriat' element={<FactoriatP/>}/>  
         <Route path='/Technoriat/contact' element={<Contact/>}/>
         <Route path="/Technoriat/Register" element={<Register />} />
         <Route path="/Technoriat/Login" element={<Login />} />

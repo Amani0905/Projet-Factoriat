@@ -24,8 +24,9 @@
 
 
 .wrapper h1{
-  font-family: Ubuntu-Bold;
-  font-size: 30px;
+  font-family:'Exo 2', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
   color: #fff;
   margin-bottom: 25px;
   
