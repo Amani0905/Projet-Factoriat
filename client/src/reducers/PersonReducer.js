@@ -7,7 +7,7 @@ import {
 } from "../actions/types";
 
 const initState = {
-  userInfo: JSON.parse(localStorage.getItem("personInfo")) || {},
+  userInfo: JSON.parse(localStorage.getItem("userInfo")) || {},
   token: localStorage.getItem("token") || null,
   errors: null,
   isAuth: Boolean(localStorage.getItem("isAuth")) || false,
@@ -20,17 +20,17 @@ const PersonReducer = (state = initState, { type, payload }) => {
     case REGISTER_SUCCESS:
       return {
         ...state,
-        personInfo: payload.newPerson,
+        userInfo: payload.newPerson,
         errors: null,
       };
     case LOGIN_SUCCESS:
       localStorage.setItem("token", payload.token);
       localStorage.setItem("isAuth", true);
-      localStorage.setItem("personInfo", JSON.stringify(payload.existUser));
+      localStorage.setItem("userInfo", JSON.stringify(payload.existUser));
 
       return {
         ...state,
-        personInfo: payload.existUser,
+        userInfo: payload.existUser,
         token: payload.token,
         isAuth: true,
         errors: null,

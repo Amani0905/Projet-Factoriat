@@ -8,9 +8,9 @@ import {
 } from "./types";
 export const register = (personData, nav) => async (dispatch) => {
   try {
-    const res = axios.post("/api/person/register", personData);
+    const res = await axios.post("/api/person/register", personData);
     dispatch({ type: REGISTER_SUCCESS, payload: res.data });
-    nav("/Login");
+    nav("/Technoriat/Login");
   } catch (error) {
     dispatch({ type: REGISTER_FAIL, payload: error });
   }
@@ -20,7 +20,7 @@ export const login = (personData, nav) => async (dispatch) => {
   try {
     const res = await axios.post("/api/person/login", personData);
     dispatch({ type: LOGIN_SUCCESS, payload: res.data });
-    nav("/Login");
+    nav("/Technoriat/Profil");
   } catch (error) {
     dispatch({
       type: LOGIN_FAIL,
