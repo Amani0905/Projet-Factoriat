@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { register as registerAction } from "../actions/personActions";
@@ -29,7 +29,8 @@ const Register = () => {
         <label>address</label>
         <input required type="text" {...register("address")}></input>
         <br />
-        <button>Register</button>
+        <button>Register</button> <br />
+        <Link to="/Technoriat/Login"> Je suis déjà enregistré(e)</Link>
       </form>
     </div>
   );

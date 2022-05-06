@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { login as loginAction } from "../actions/personActions";
@@ -25,7 +25,11 @@ const Login = () => {
         <input required type="password" {...register("password")}></input>
         <br />
         {errors && <p>{errors}</p>}
-        <button>Login</button>
+        <button>Login</button> <br />
+        <Link to="/Technoriat/Register">
+          {" "}
+          Je ne suis pas encore enregistré(e)
+        </Link>
       </form>
     </div>
   );
