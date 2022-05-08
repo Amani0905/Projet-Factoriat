@@ -10,7 +10,7 @@ const Register = () => {
   const { register, handleSubmit } = useForm();
   const { isAuth } = useSelector((state) => state.user);
   // useEffect(() => {
-  //   if (isAuth) nav("/Login");
+  //   if (isAuth) nav("/Technoriat/Login");
   // }, [isAuth, nav]);
   const registernewperson = (data) => {
     dispatch(registerAction(data, nav));

@@ -7,6 +7,7 @@ import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Profil from "./Pages/Profil"
 import Equipe from "./Pages/Equipe";
+import Dashbordposts from "./Pages/Dashbordposts";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Route path='/Technoriat/contact' element={<Contact/>}/>
         <Route path="/Technoriat/Register" element={<Register />} />
         <Route path="/Technoriat/Login" element={<Login />} />
-        <Route element={<ProtectedRoute />}/>
+        {/* <Route element={<ProtectedRoute />}/> */}
         <Route path="/Technoriat/Profil" element={<Profil />} />
+        <Route path="/Technoriat/Dashbord" element={<Dashbordposts />} />
       </Routes>
       <Footer/>
     </div>

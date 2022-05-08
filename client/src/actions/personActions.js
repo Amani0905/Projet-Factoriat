@@ -20,7 +20,8 @@ export const login = (personData, nav) => async (dispatch) => {
   try {
     const res = await axios.post("/api/person/login", personData);
     dispatch({ type: LOGIN_SUCCESS, payload: res.data });
-    nav("/Technoriat/Profil");
+    if (res.data.existUser.role ==='user') nav("/Technoriat/Profil");
+    else if (res.data.existUser.role ==='admin') nav("/Technoriat/Dashbord");
   } catch (error) {
     dispatch({
       type: LOGIN_FAIL,
