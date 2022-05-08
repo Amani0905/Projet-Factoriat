@@ -2,20 +2,20 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
 
-const ProtectedRoute = () => {
+const NotUserProtectedRoute = () => {
   const { isAuth, userInfo } = useSelector((state) => state.user);
 
   return (
     <div>
-      {isAuth && userInfo.role === "user" ? (
+      {!isAuth ? (
         <Outlet />
-      ) : isAuth && userInfo.role === "admin" ? (
-        <Navigate to="/Technoriat/Dashbord" />
+      ) : isAuth && userInfo.role === "user" ? (
+        <Navigate to="/Technoriat/Profil" />
       ) : (
-        <Navigate to="/Technoriat/Login" />
+        <Navigate to="/Technoriat/Dashbord" />
       )}
     </div>
   );
 };
 
-export default ProtectedRoute;
+export default NotUserProtectedRoute;

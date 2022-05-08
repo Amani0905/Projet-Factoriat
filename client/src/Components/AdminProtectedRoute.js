@@ -3,9 +3,19 @@ import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
 
 const AdminProtectedRoute = () => {
-  const { isAuth , role } = useSelector((state) => state.person);
+  const { isAuth, userInfo } = useSelector((state) => state.user);
 
-  return <div>{(isAuth && role==='admin') ? <Outlet /> : <Navigate to="/Login" />}</div>;
+  return (
+    <div>
+      {isAuth && userInfo.role === "admin" ? (
+        <Outlet />
+      ) : isAuth && userInfo.role === "user" ? (
+        <Navigate to="/Technoriat/Profil" />
+      ) : (
+        <Navigate to="/Technoriat/Login" />
+      )}
+    </div>
+  );
 };
 
 export default AdminProtectedRoute;
