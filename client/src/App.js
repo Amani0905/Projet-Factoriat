@@ -6,10 +6,12 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Profil from "./Pages/Profil"
+import Dashbordposts from "./Pages/Dashbordposts";
 import TeamP from "./Pages/TeamP";
 import Technoriat from "./Pages/Technoriat";
 import FactoriatP from "./Pages/FactoriatP";
 import FactoriatTest from "./Components/FactoriatTest";
+
 
 
 
@@ -27,8 +29,9 @@ function App() {
         <Route path='/Technoriat/contact' element={<Contact/>}/>
         <Route path="/Technoriat/Register" element={<Register />} />
         <Route path="/Technoriat/Login" element={<Login />} />
-        <Route element={<ProtectedRoute />}/>
+        {/* <Route element={<ProtectedRoute />}/> */}
         <Route path="/Technoriat/Profil" element={<Profil />} />
+        <Route path="/Technoriat/Dashbord" element={<Dashbordposts />} />
       </Routes>
       <Footer/>
     </div>
