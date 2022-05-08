@@ -19,7 +19,7 @@ const Footer = () => {
     <p>Ce site a été créé et est maintenu avec le soutien financier de l’Union Européenne.</p>
     <p>Made with love ❤</p>
 
-        <h5 style={{color:'grey',fontFamily:'Roboto'}}>Technoriat &copy; 2022 All rights reserved </h5>
+        <h5 style={{color:'grey',fontFamily:'Exo 2', fontSize:'15px'}}>Technoriat &copy; 2022 All rights reserved </h5>
     </div>
 
 </footer></div>
