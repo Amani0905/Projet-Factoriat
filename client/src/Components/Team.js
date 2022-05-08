@@ -30,6 +30,7 @@ const Team = () => {
         </div>
         <h3>Sophie <br/>Gombart-Masmoudi</h3>
         <span>Responsable unité de prototypage industriel</span>
+        <br/>
         <p>sophie@vitaminn.tn</p>
       </div>
       <div className="team_member">
