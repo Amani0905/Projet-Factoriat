@@ -23,7 +23,7 @@ const Factoriat = () => {
         </div>
         <div classeName="copy" style={{backgroundColor:'#ffc80a',height:644}} >
           <h2 style={{fontSize:'60px',textAlign:'center'}}> A PROPOS DE NOUS</h2><br/>
-          <p1 style={{fontSize:'16px',lineHeight:'2.5'}}>FACTORIAT aide les innovateurs à accélérer le temps « du prototype à la machine » et à assurer la qualité et la conformité aux normes industrielles.<br/>
+          <p1 style={{fontSize:'16px',lineHeight:'2.5', padding:'2rem'}}>FACTORIAT aide les innovateurs à accélérer le temps « du prototype à la machine » et à assurer la qualité et la conformité aux normes industrielles.<br/>
 FACTORIAT prend en charge la conception électro-mécanique, la programmation, supervise la fabrication, réalise l'assemblage et les tests de validation.<br/> 
 Avec un prototype industrialisé par FACTORIAT, vous pouvez démontrer votre technologie dans les conditions réelles de l'industrie.<br/>
 Pilier prototypage industriel du Programme TECHNORIAT, FACTORIAT est financé aux deux tiers par l’Union européenne dans le cadre du projet Innov’i –EU4Innovation mis en œuvre par Expertise France ainsi que par le programme DEAL de Smart Capital.
