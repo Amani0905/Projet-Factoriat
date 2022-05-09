@@ -12,13 +12,14 @@ import Dashbordposts from "./Pages/Dashbordposts";
 import TeamP from "./Pages/TeamP";
 import Technoriat from "./Pages/Technoriat";
 import FactoriatP from "./Pages/FactoriatP";
+import Journal from "./Pages/Journal";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Routes>
-          
+      <Route path='/Technoriat/Journal' element={<Journal/>}/>  
         <Route path='/Technoriat/Technoriat' element={<Technoriat/>}/>  
         <Route path='/Technoriat/equipe' element={<TeamP/>}/>
         <Route path='/Technoriat/Factoriat' element={<FactoriatP/>}/>  
