@@ -1,5 +1,8 @@
 import axios from "axios";
 import {
+  ADD_POST_FAILED,
+  ADD_POST_LOADING,
+  ADD_POST_SUCCESS,
   GET_POST_FAILED,
   GET_POST_LOADING,
   GET_POST_SUCCESS,
@@ -12,5 +15,16 @@ export const getPosts = () => async (dispatch) => {
     dispatch({ type: GET_POST_SUCCESS, payload: res.data });
   } catch (error) {
     dispatch({ type: GET_POST_FAILED, payload: error });
+  }
+};
+
+export const addPost = (postData, nav) => async (dispatch) => {
+  try {
+    dispatch({ type: ADD_POST_LOADING });
+    const res = await axios.post("/admin/api/post", postData);
+    dispatch({ type: ADD_POST_SUCCESS, payload: res.data });
+    nav("/Technoriat/Dashbord");
+  } catch (error) {
+    dispatch({ type: ADD_POST_FAILED, payload: error });
   }
 };

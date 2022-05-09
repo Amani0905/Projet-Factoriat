@@ -13,6 +13,8 @@ import TeamP from "./Pages/TeamP";
 import Technoriat from "./Pages/Technoriat";
 import FactoriatP from "./Pages/FactoriatP";
 import Journal from "./Pages/Journal";
+import Addnewpost from "./Pages/Addnewpost";
+
 
 function App() {
   return (
@@ -33,6 +35,10 @@ function App() {
         </Route>
         <Route element={<AdminProtectedRoute />}>
           <Route path="/Technoriat/Dashbord" element={<Dashbordposts />} />
+          <Route
+            path="/Technoriat/Dashbord/Addnewpost"
+            element={<Addnewpost />}
+          />
         </Route>
       </Routes>
       <Footer />

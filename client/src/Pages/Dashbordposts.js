@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutAction } from "../actions/personActions";
 import { getPosts } from "../actions/postsActions";
@@ -30,11 +30,12 @@ const Dashbordposts = () => {
         <>
         <h4>{el.title}</h4>
         <h6>{el.shorttext}</h6>
-        <h8>{el.content}</h8>
-        <h8>{el.image}</h8>
+        {/* <h8>{el.content}</h8> */}
+        {/* <h8>{el.image}</h8> */}
         </>
       ))}
-      <button onClick={logout}>LOGOUT</button>
+      <button onClick={logout}>LOGOUT</button><br/>
+      <Link to='/Technoriat/Dashbord/Addnewpost'>Ajouter une nouvelle publication</Link>
     </div>
   );
 };
