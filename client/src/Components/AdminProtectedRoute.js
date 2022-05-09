@@ -2,15 +2,15 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
 
-const ProtectedRoute = () => {
+const AdminProtectedRoute = () => {
   const { isAuth, userInfo } = useSelector((state) => state.user);
 
   return (
     <div>
-      {isAuth && userInfo.role === "user" ? (
+      {isAuth && userInfo.role === "admin" ? (
         <Outlet />
-      ) : isAuth && userInfo.role === "admin" ? (
-        <Navigate to="/Technoriat/Dashbord" />
+      ) : isAuth && userInfo.role === "user" ? (
+        <Navigate to="/Technoriat/Profil" />
       ) : (
         <Navigate to="/Technoriat/Login" />
       )}
@@ -18,4 +18,4 @@ const ProtectedRoute = () => {
   );
 };
 
-export default ProtectedRoute;
+export default AdminProtectedRoute;
