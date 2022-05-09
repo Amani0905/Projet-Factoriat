@@ -63,7 +63,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav" to="/Technoriat/journal">
+              <Link className="nav" to="/Technoriat/Journal">
                 Journal
               </Link>
             </li>
