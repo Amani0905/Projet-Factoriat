@@ -3,6 +3,9 @@ import {
   ADD_POST_FAILED,
   ADD_POST_LOADING,
   ADD_POST_SUCCESS,
+  DELETE_POST_FAILED,
+  DELETE_POST_LOADING,
+  DELETE_POST_SUCCESS,
   GET_POST_FAILED,
   GET_POST_LOADING,
   GET_POST_SUCCESS,
@@ -28,3 +31,14 @@ export const addPost = (postData, nav) => async (dispatch) => {
     dispatch({ type: ADD_POST_FAILED, payload: error });
   }
 };
+
+// export const deletePost = (postId) => async (dispatch) => {
+//   try {
+//     dispatch({ type: DELETE_POST_LOADING });
+//     const res = await axios.delete(`/admin/api/post/${postId}`,postId);
+//     dispatch({ type: DELETE_POST_SUCCESS, payload: res.data });
+//     getPosts();
+//   } catch (error) {
+//     dispatch({ type: DELETE_POST_FAILED, payload: error });
+//   }
+// };

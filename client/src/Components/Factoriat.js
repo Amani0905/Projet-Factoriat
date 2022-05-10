@@ -24,7 +24,8 @@ const Factoriat = () => {
           <p style={{color:"black"}}>FACTORIAT aide les innovateurs à accélérer le temps « du prototype à la machine » et à assurer la qualité et la conformité aux normes industrielles.<br/>
 FACTORIAT prend en charge la conception électro-mécanique, la programmation, supervise la fabrication, réalise l'assemblage et les tests de validation.<br/> 
 Avec un prototype industrialisé par FACTORIAT, vous pouvez démontrer votre technologie dans les conditions réelles de l'industrie.<br/>
-Pilier prototypage industriel du Programme TECHNORIAT, FACTORIAT est financé aux deux tiers par l’Union européenne dans le cadre du projet Innov’i –EU4Innovation mis en œuvre par Expertise France ainsi que par le programme DEAL de Smart Capital.
+Pilier prototypage industriel du Programme TECHNORIAT, FACTORIAT est financé aux deux tiers par l’Union européenne dans le cadre du projet Innov’i –EU4Innovation mis en œuvre par Expertise France ainsi que par le programme DEAL de Smart Capital.<br/> 
+<a style={{marginTop:'20px',marginLeft:'40%'}}href="/Technoriat/contact" className=" btn btn-dark btn-sm  " role="button" ariaDisabled="true">Contactez-nous</a>
            
           </p>
         </div>
@@ -41,6 +42,8 @@ Pilier prototypage industriel du Programme TECHNORIAT, FACTORIAT est financé a
 Vous êtes un industriel cherchant à intégrer une technologie innovante?<br/>
 Participez à l'appel à projet de FACTORIAT pour tenter d'obtenir la subvention complète de la conception et de la programmation de votre prototype (design for manufacturing) ainsi qu'une subvention jusqu'à 5 000DT en matériel hardware.<br/> 
 Remplissez le formulaire de participation avant le 28/2 à minuit.<br/>
+
+<a style={{marginTop:'20px',marginLeft:'40%'}}href="/Technoriat/Register" className=" btn btn-warning btn-sm  " role="button" ariaDisabled="true">Postulez ici</a>
             
           </p>
         </div>
