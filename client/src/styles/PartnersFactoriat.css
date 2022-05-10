@@ -8,8 +8,8 @@
     justify-items: center;
     align-items: center;
     margin: auto;
-    max-width: 750px;
-    gap: 20px;
+    max-width: 900px;
+    gap: 100px;
   }
   .partner-logo {
     box-sizing: border-box;
@@ -22,6 +22,4 @@
   .partner-logo img:hover {
     background-color: #eeeeee;
   }
-  .col-2 img {
-    max-width: 375px;
-  }
+  

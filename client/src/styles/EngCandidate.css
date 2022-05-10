@@ -1,0 +1,16 @@
+
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #69686a
+}
+.col-md-4{
+    padding-top: 20px;
+
+}
