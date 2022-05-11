@@ -19,9 +19,9 @@ const Dashbordposts = () => {
   const { postList, loading } = useSelector((state) => state.post);
 
   // Supprimer des posts : //
-  // const delpost = (postId) => {
-  //   dispatch(deletePost(postId));
-  // };
+  const delpost = (postId) => {
+    dispatch(deletePost(postId));
+  };
 
   // identifcation d'admin (exclusivement admin task) //
   const { isAuth } = useSelector((state) => state.user);
@@ -38,7 +38,7 @@ const Dashbordposts = () => {
           {/* <h8>{el.content}</h8> */}
           {/* <h8>{el.image}</h8> */}
           <button
-            // onClick={delpost(el.id)}
+            onClick={() => delpost(el._id)}
             style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
           >
             Supprimer

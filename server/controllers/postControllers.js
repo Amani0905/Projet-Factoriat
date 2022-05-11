@@ -10,7 +10,6 @@ exports.addPost = async (req, res) => {
   } catch (error) {
     res.status(500).json({ msg: "something went wrong" });
   }
-
 };
 
 // @desc get a post (Find all in Database(Find))
@@ -30,7 +29,11 @@ exports.getPost = async (req, res) => {
 //@access PRIVATE-admin
 exports.updatePost = async (req, res) => {
   try {
-    await Post.findByIdAndUpdate(req.params.PostId, { ...req.body }, { new: true });
+    await Post.findByIdAndUpdate(
+      req.params.PostId,
+      { ...req.body },
+      { new: true }
+    );
     res.status(200).json({ msg: "Post updated" });
   } catch (error) {
     res.status(500).json({ msg: "something went wrong" });
@@ -38,7 +41,7 @@ exports.updatePost = async (req, res) => {
 };
 
 //@desc delete a post by ID
-//@path DELETE/api/post/postId
+//@path DELETE/api/post/:postId
 //@access PRIVATE-admin
 exports.deletePost = async (req, res) => {
   try {
