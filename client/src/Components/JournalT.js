@@ -13,11 +13,9 @@ const JournalT = () => {
   const { postList, loading } = useSelector((state) => state.post);
 
   return (
-    <body >
-      
+    <body className="news">
+     <h1 style={{backgroundColor:"#ffc80a",marginTop:20}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1> 
     <div className="news">
-    <h1 style={{backgroundColor:"#ffc80a",marginBottom:20,marginTop:20}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1>
-    
     
       {postList.map((el) => (
         <>
