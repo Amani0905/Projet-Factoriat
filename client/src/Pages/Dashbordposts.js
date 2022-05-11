@@ -29,12 +29,14 @@ const Dashbordposts = () => {
     if (!isAuth) nav("/Technoriat/Login");
   }, [isAuth, nav]);
 
+
   return (
     <div>
       {postList.map((el) => (
         <>
           <h4>{el.title}</h4>
           <h6>{el.shorttext}</h6>
+          <h6>{el.date}</h6>
           {/* <h8>{el.content}</h8> */}
           {/* <h8>{el.image}</h8> */}
           <button

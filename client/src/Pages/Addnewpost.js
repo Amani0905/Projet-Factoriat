@@ -17,13 +17,15 @@ const Addnewpost = () => {
       <form onSubmit={handleSubmit(addnewpost)}>
         <label>Tittre</label>
         <input required type="text" {...register("title")}></input> <br />
-        <label>shorttext</label>
+        <label>Date</label>
+        <input required type="date" {...register("date")}></input> <br />
+        <label>Shorttext</label>
         <input required type="text" {...register("shorttext")}></input>
         <br />
         <label>Contenu</label>
         <input required type="text" {...register("content")}></input>
         <br />
-        <label>image</label>
+        <label>Image</label>
         <input required type="text" {...register("image")}></input>
         <br />
         <button style={{fontWeight:'bold',backgroundColor:'aqua'}}>Add</button> <br />

@@ -21,12 +21,12 @@ const PostReducer = (state = initState, { type, payload }) => {
       return { ...state, postList: payload, loading: false, errors: false };
     case GET_POST_FAILED:
       return { ...state, loading: false, errors: payload };
-    // case DELETE_POST_LOADING:
-    //   return { ...state, loading: true };
-    // case DELETE_POST_SUCCESS:
-    //   return { ...state, postId:payload, loading: false, errors: false };
-    // case DELETE_POST_FAILED:
-    //   return { ...state, loading: false, errors: payload };
+    case DELETE_POST_LOADING:
+      return { ...state, loading: true };
+    case DELETE_POST_SUCCESS:
+      return { ...state, postId:payload, loading: false, errors: false };
+    case DELETE_POST_FAILED:
+      return { ...state, loading: false, errors: payload };
     default:
       return state;
   }
