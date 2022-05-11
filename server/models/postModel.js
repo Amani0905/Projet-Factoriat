@@ -4,6 +4,10 @@ const PostSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  date: {
+    type: String,
+    required: true,
+  },
   shorttext: {
     type: String,
     required: true,

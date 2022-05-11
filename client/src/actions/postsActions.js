@@ -36,7 +36,7 @@ export const deletePost = (postId) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_POST_LOADING });
     const res = await axios.delete(`/admin/api/post/${postId}`, postId);
-    // dispatch({ type: DELETE_POST_SUCCESS, payload: res.data });
+    dispatch({ type: DELETE_POST_SUCCESS, payload: res.data });
     dispatch(getPosts());
   } catch (error) {
     dispatch({ type: DELETE_POST_FAILED, payload: error });
