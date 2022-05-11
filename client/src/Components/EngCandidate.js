@@ -9,8 +9,8 @@ const EngCandidate = () => {
     <div className="row g-2">
       <div className="col-md-4" >
         <div className="card p-3"style={{backgroundColor:"#ffc80a"}}>
-          <div className="mt-3"><i style={{color:'white'}}className="fa-solid fa-file-signature"></i>
-            <h3 className="mt-3 text-truncate">Contrat</h3> <span className="text justify-content mt-3">Signer un contrat d’accompagnement</span>
+          <div className="mt-3">
+            <h3 className="mt-3 text-truncate">Contrat</h3> <span className="text justify-content mt-3">Signer un contrat d’accompagnement</span><br/><br/>
           </div>
         </div>
       </div>
