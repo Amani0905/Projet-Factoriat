@@ -8,9 +8,15 @@
 .text {
     font-size: 14px;
     font-weight: 600;
-    color: #69686a
+    color: #69686a;
+    text-align: justify;
+    
 }
+
 .col-md-4{
     padding-top: 20px;
 
+}
+.mt-3  {
+    text-align: center;
 }
