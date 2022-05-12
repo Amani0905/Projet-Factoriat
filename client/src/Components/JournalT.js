@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from "../actions/postsActions";
-import "../styles/JournalT.css"
+import "../styles/JournalT.css";
 
 const JournalT = () => {
   const dispatch = useDispatch();
@@ -13,6 +13,7 @@ const JournalT = () => {
   const { postList, loading } = useSelector((state) => state.post);
 
   return (
+
     <body className="news">
      <h1 style={{backgroundColor:"#ffc80a",marginTop:20}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1> 
     <div className="news">

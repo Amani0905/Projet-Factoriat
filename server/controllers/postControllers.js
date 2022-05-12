@@ -24,8 +24,17 @@ exports.getPost = async (req, res) => {
   }
 };
 
+exports.getPostById = async (req, res) => {
+  try {
+    const product = await Post.findById(req.params.postId);
+    res.json(product);
+  } catch (error) {
+    res.status(500).json({ msg: "something went wrong" });
+  }
+};
+
 //@desc update a post by ID
-//@path PUT /api/post/postId
+//@path PUT /api/post/:postId
 //@access PRIVATE-admin
 exports.updatePost = async (req, res) => {
   try {

@@ -29,6 +29,11 @@ const Dashbordposts = () => {
     if (!isAuth) nav("/Technoriat/Login");
   }, [isAuth, nav]);
 
+  const handleupdate = (el) => {
+    // dispatch({type:'transfertdata',payload:el})
+    nav(`/Technoriat/Dashbord/Updatepost/${el._id}`);
+    localStorage.setItem("postInfo", JSON.stringify(el));
+  };
 
   return (
     <div>
@@ -45,6 +50,15 @@ const Dashbordposts = () => {
           >
             Supprimer
           </button>
+
+          {/* <Link to="/Technoriat/Dashbord/Updatepost" post={el}> */}
+          <button
+            onClick={() => handleupdate(el)}
+            style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
+          >
+            Update
+          </button>
+          {/* </Link> */}
         </>
       ))}
       <br />
