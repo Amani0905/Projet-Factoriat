@@ -22,7 +22,7 @@ const JournalT = () => {
         <>
           <figure className="snip1529">
         <img src={require("../styles/img/article2.png")} alt="Article" />
-        <div className="date"><span className="day">28</span><span className="month">Apr</span></div>
+        <div className="date"><i class="fa-solid fa-newspaper"></i></div>
         <figcaption>
           <h3>{el.title}</h3>
           <p>{el.shorttext}</p>
