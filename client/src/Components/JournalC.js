@@ -30,7 +30,8 @@ const { postList, loading } = useSelector((state) => state.post);
           {el.title}
           </h1>
       <div className="meta">
-        <span className="author"><span className="author-name">Publié 28, Avril 2021</span></span>
+        {/* <span className="author"><span className="author-name">Publié le 28, Avril 2021</span></span> */}
+        <span className="author"><span className="author-name">Publié le {el.date}</span></span>
         {/*<span className="pub-date">Publié 28, Avril 2021</span>*/}
       </div>
     </header>

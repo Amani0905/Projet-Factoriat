@@ -14,20 +14,20 @@ import Technoriat from "./Pages/Technoriat";
 import FactoriatP from "./Pages/FactoriatP";
 import Journal from "./Pages/Journal";
 import Addnewpost from "./Pages/Addnewpost";
+import Updatepostpage from "./Pages/Updatepostpage";
 import JournalC from "./Components/JournalC";
-
 
 function App() {
   return (
     <div>
       <Navbar />
       <Routes>
-        <Route path='/Technoriat/Journal/description' element={<JournalC/>}/>
-      <Route path='/Technoriat/Journal' element={<Journal/>}/>  
-        <Route path='/Technoriat/Technoriat' element={<Technoriat/>}/>  
-        <Route path='/Technoriat/equipe' element={<TeamP/>}/>
-        <Route path='/Technoriat/Factoriat' element={<FactoriatP/>}/>  
-        <Route path='/Technoriat/contact' element={<Contact/>}/>
+        <Route path="/Technoriat/Journal/description" element={<JournalC />} />
+        <Route path="/Technoriat/Journal" element={<Journal />} />
+        <Route path="/Technoriat/Technoriat" element={<Technoriat />} />
+        <Route path="/Technoriat/equipe" element={<TeamP />} />
+        <Route path="/Technoriat/Factoriat" element={<FactoriatP />} />
+        <Route path="/Technoriat/contact" element={<Contact />} />
         <Route element={<NotUserProtectedRoute />}>
           <Route path="/Technoriat/Register" element={<Register />} />
           <Route path="/Technoriat/Login" element={<Login />} />
@@ -40,6 +40,10 @@ function App() {
           <Route
             path="/Technoriat/Dashbord/Addnewpost"
             element={<Addnewpost />}
+          />
+          <Route
+            path="/Technoriat/Dashbord/Updatepost/:postId"
+            element={<Updatepostpage />}
           />
         </Route>
       </Routes>
