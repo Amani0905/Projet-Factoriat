@@ -14,15 +14,16 @@ import Technoriat from "./Pages/Technoriat";
 import FactoriatP from "./Pages/FactoriatP";
 import Journal from "./Pages/Journal";
 import Addnewpost from "./Pages/Addnewpost";
+import Updatepostpage from "./Pages/Updatepostpage";
 import JournalC from "./Components/JournalC";
 import Home from "./Pages/Home";
-
 
 function App() {
   return (
     <div>
       <Navbar />
       <Routes>
+
       <Route path='/Technoriat/Acceuil' element={<Home/>}/>
         <Route path='/Technoriat/Journal/description' element={<JournalC/>}/>
       <Route path='/Technoriat/Journal' element={<Journal/>}/>  
@@ -42,6 +43,10 @@ function App() {
           <Route
             path="/Technoriat/Dashbord/Addnewpost"
             element={<Addnewpost />}
+          />
+          <Route
+            path="/Technoriat/Dashbord/Updatepost/:postId"
+            element={<Updatepostpage />}
           />
         </Route>
       </Routes>
