@@ -7,6 +7,11 @@ const router= express.Router();
 //@params POST/api/person/Register
 //@access PUBLIC
 router.post('/register', register);
+
+//@desc Login a Person (def role: user)
+//@params POST/api/person/Login
+//@access PUBLIC
 router.post('/login', login);
 router.get('/',authMiddleware, getPersonData);
+
 module.exports= router;

@@ -10,6 +10,7 @@ app.use(cors({ origin: true }));
 //Routes
 app.use("/api/person", require("./routes/personRoutes"));
 app.use("/admin/api/post", require("./routes/postRoutes"));
+app.use("/admin/api/user", require("./routes/usersRoutes"));
 
 //connection to database
 const connectDB = require("./config/connectDB");
