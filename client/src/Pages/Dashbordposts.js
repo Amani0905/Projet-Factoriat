@@ -35,6 +35,12 @@ const Dashbordposts = () => {
     localStorage.setItem("postInfo", JSON.stringify(el));
   };
 
+  const handledelete = (el) => {
+    // dispatch({type:'transfertdata',payload:el})
+    nav(`/Technoriat/Dashbord/Deletepost/${el._id}`);
+    localStorage.setItem("postInfo", JSON.stringify(el));
+  };
+
   return (
     <div>
       {postList.map((el) => (
@@ -44,21 +50,20 @@ const Dashbordposts = () => {
           <h6>{el.date}</h6>
           {/* <h8>{el.content}</h8> */}
           {/* <h8>{el.image}</h8> */}
+
           <button
-            onClick={() => delpost(el._id)}
+            onClick={() => handledelete(el)}
             style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
           >
             Supprimer
           </button>
 
-          {/* <Link to="/Technoriat/Dashbord/Updatepost" post={el}> */}
           <button
             onClick={() => handleupdate(el)}
             style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
           >
             Update
           </button>
-          {/* </Link> */}
         </>
       ))}
       <br />
