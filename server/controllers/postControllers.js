@@ -24,6 +24,9 @@ exports.getPost = async (req, res) => {
   }
 };
 
+// @desc get a post by ID 
+// @path GET/api/post
+// @access PRIVATE-admin
 exports.getPostById = async (req, res) => {
   try {
     const product = await Post.findById(req.params.postId);
