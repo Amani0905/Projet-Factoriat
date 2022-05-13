@@ -4,7 +4,7 @@ import { combineReducers } from "redux";
 import UserReducer from "./UsersReducer";
 
 export default combineReducers({
-  person: PersonReducer,
+  user: PersonReducer,
   post: PostReducer,
-  user: UserReducer,
+  client: UserReducer,
 });
