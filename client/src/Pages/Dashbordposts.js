@@ -23,11 +23,11 @@ const Dashbordposts = () => {
     dispatch(deletePost(postId));
   };
 
-  // identifcation d'admin (exclusivement admin task) //
-  const { isAuth } = useSelector((state) => state.user);
-  useEffect(() => {
-    if (!isAuth) nav("/Technoriat/Login");
-  }, [isAuth, nav]);
+  // // identifcation d'admin (exclusivement admin task) //
+  // const { isAuth } = useSelector((state) => state.user);
+  // useEffect(() => {
+  //   if (!isAuth) nav("/Technoriat/Login");
+  // }, [isAuth, nav]);
 
   const handleupdate = (el) => {
     // dispatch({type:'transfertdata',payload:el})
@@ -73,6 +73,13 @@ const Dashbordposts = () => {
       <Link to="/Technoriat/Dashbord/Addnewpost">
         <button style={{ fontWeight: "bold", backgroundColor: "#adf2c2" }}>
           Ajouter une nouvelle publication
+        </button>
+      </Link>
+      <br />
+
+      <Link to="/Technoriat/AdminProfil">
+        <button style={{ fontWeight: "bold", backgroundColor: "#adf2c2" }}>
+          Retour
         </button>
       </Link>
     </div>

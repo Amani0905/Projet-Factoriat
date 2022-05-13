@@ -6,6 +6,9 @@ import {
   GET_POST_FAILED,
   GET_POST_LOADING,
   GET_POST_SUCCESS,
+  UPDATE_POST_FAILED,
+  UPDATE_POST_LOADING,
+  UPDATE_POST_SUCCESS,
 } from "../actions/poststypes";
 
 const initState = {
@@ -30,6 +33,12 @@ const PostReducer = (state = initState, { type, payload }) => {
       return { ...state, loading: false, errors: payload };
     case GET_POST_BYID_SUCCESS:
       return { ...state, postInfo: payload };
+    case UPDATE_POST_LOADING:
+      return { ...state, loading: true };
+    case UPDATE_POST_SUCCESS:
+      return { ...state, postId: payload, loading: false, errors: false };
+    case UPDATE_POST_FAILED:
+      return { ...state, loading: false, errors: payload };
     default:
       return state;
   }

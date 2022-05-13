@@ -12,7 +12,7 @@ const NotUserProtectedRoute = () => {
       ) : isAuth && userInfo.role === "user" ? (
         <Navigate to="/Technoriat/Profil" />
       ) : (
-        <Navigate to="/Technoriat/Dashbord" />
+        <Navigate to="/Technoriat/AdminProfil" />
       )}
     </div>
   );

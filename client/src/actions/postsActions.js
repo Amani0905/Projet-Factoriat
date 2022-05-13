@@ -10,6 +10,9 @@ import {
   GET_POST_FAILED,
   GET_POST_LOADING,
   GET_POST_SUCCESS,
+  UPDATE_POST_FAILED,
+  UPDATE_POST_LOADING,
+  UPDATE_POST_SUCCESS,
 } from "./poststypes";
 
 export const getPosts = () => async (dispatch) => {
@@ -56,12 +59,12 @@ export const deletePost = (postId) => async (dispatch) => {
 
 export const updatePost = (postData, nav) => async (dispatch) => {
   try {
-    // dispatch({ type: DELETE_POST_LOADING });
+    dispatch({ type: UPDATE_POST_LOADING });
     const res = await axios.put(`/admin/api/post/${postData._id}`, postData);
-    // dispatch({ type: DELETE_POST_SUCCESS, payload: res.data });
+    dispatch({ type: UPDATE_POST_SUCCESS, payload: res.data });
     // dispatch(getPosts());
     nav("/Technoriat/Dashbord");
   } catch (error) {
-    dispatch({ type: DELETE_POST_FAILED, payload: error });
+    dispatch({ type: UPDATE_POST_FAILED, payload: error });
   }
 };
