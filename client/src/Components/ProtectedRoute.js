@@ -10,7 +10,7 @@ const ProtectedRoute = () => {
       {isAuth && userInfo.role === "user" ? (
         <Outlet />
       ) : isAuth && userInfo.role === "admin" ? (
-        <Navigate to="/Technoriat/Dashbord" />
+        <Navigate to="/Technoriat/AdminProfil" />
       ) : (
         <Navigate to="/Technoriat/Login" />
       )}
