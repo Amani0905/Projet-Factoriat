@@ -4,7 +4,7 @@ import "../styles/EngCandidate.css"
 const EngCandidate = () => {
   return (
     <div style={{paddingTop:'40px',paddingBottom:'40px',backgroundColor:'#f4f4f4'}}>
-        <h2 style={{padding:"20px",textAlign:"center"}}>VOTRE ENGAGEMENT</h2>
+        <h2 style={{padding:"20px",textAlign:"center",fontWeight:900,fontSize:'35px'}}>VOTRE ENGAGEMENT</h2>
         <div className="container mt-5">
     <div className="row g-2">
       <div className="col-md-4" >
