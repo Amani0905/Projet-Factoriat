@@ -15,7 +15,7 @@ const JournalT = () => {
   return (
 
     <body className="news">
-     <h1 style={{backgroundColor:"#ffc80a",marginTop:20}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1> 
+     <h1 style={{backgroundColor:"#ffc80a",marginTop:20,fontWeight:900,fontSize:'35px',paddingLeft:'28%',paddingRight:'28%'}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1> 
     <div className="news">
     
       {postList.map((el) => (
@@ -35,7 +35,7 @@ const JournalT = () => {
           
         </>
       ))}
-      <h3 style={{marginTop:40,color:'white',fontSize:16,marginBottom:40,width:'80%'}} >A travers cette platforme,Technoriate souhaite soutenir les chercheurs entrepreneurs pour vulgariser leurs résultats de recherche, partager leurs succès et exprimer leurs opinions. Nous sommes convaincus que la Technoriatie peut prendre une meilleure place dans le développement de la Tunisie.</h3>
+      <h3 style={{marginTop:40,color:'black',fontSize:16,marginBottom:40,width:'80%'}} >A travers cette platforme,Technoriate souhaite soutenir les chercheurs entrepreneurs pour vulgariser leurs résultats de recherche, partager leurs succès et exprimer leurs opinions. Nous sommes convaincus que la Technoriatie peut prendre une meilleure place dans le développement de la Tunisie.</h3>
     <a style={{marginTop:'10px',marginLeft:'0%'}}href="/Technoriat/contact" className=" btn btn-warning btn-sm  " role="button" ariaDisabled="true">Contactez-nous</a>
       
     </div>

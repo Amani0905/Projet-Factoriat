@@ -3,14 +3,12 @@ import "../styles/Numbers.css"
 
 const Numbers = () => {
   return (
-    <div>
-      <header>
-          <div className="poster" style={{paddingTop:'40px'}}>
+    <>
+        <div className="poster" style={{paddingTop:'400px'}}>
             <h1 className="poster__heading">TECHNORIAT &nbsp; 
               <span className="poster__subheading" style={{display:'inline-block',fontSize:'44px',fontWeight:'600'}}> EN CHIFFRES</span>
             </h1>
             </div>
-        </header>
         <br />
         <div className="row">
           <div className="column">
@@ -49,9 +47,9 @@ const Numbers = () => {
             </div>
           </div> 
         </div>
+        </>
         
-    
-  </div>
+
   )
 }
 

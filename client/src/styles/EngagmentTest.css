@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     background-position:right bottom;
     background-image: url('./img/WATERMARK\ jaune.png');
+    z-index: 5000;
     /* rgba(24, 24, 24, 0.02) 31%, rgba(24, 24, 24, 0.02) 100%), linear-gradient(45deg, rgba(183, 183, 183, 0.08) 0%, rgba(183, 183, 183, 0.08) 69%, rgba(25, 25, 25, 0.08) 69%, rgba(25, 25, 25, 0.08) 100%), linear-gradient(0deg, rgba(205, 205, 205, 0.06) 0%, rgba(205, 205, 205, 0.06) 52%, rgba(110, 110, 110, 0.06) 52%, rgba(110, 110, 110, 0.06) 100%), linear-gradient(45deg, rgba(87, 87, 87, 0.1) 0%, rgba(87, 87, 87, 0.1) 24%, rgba(229, 229, 229, 0.1) 24%, rgba(229, 229, 229, 0.1) 100%), linear-gradient(0deg, rgba(12, 12, 12, 0.03) 0%, rgba(12, 12, 12, 0.03) 39%, rgba(207, 207, 207, 0.03) 39%, rgba(207, 207, 207, 0.03) 100%), linear-gradient(135deg, rgba(174, 174, 174, 0.04) 0%, rgba(174, 174, 174, 0.04) 73%, rgba(134, 134, 134, 0.04) 73%, rgba(134, 134, 134, 0.04) 100%), linear-gradient(0deg, rgba(105, 105, 105, 0.06) 0%, rgba(105, 105, 105, 0.06) 8%, rgba(203, 203, 203, 0.06) 8%, rgba(203, 203, 203, 0.06) 100%), linear-gradient(90deg, rgb(134, 134, 134), rgb(231, 231, 231));*/
 }
 

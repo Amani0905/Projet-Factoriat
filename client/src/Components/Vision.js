@@ -18,28 +18,28 @@ scientifique et basées sur la propriété intellectuelle en Tunisie.
   </header>
   
   {/* About */}
-  <section className="about bg-light">
+  <section className="about bg-ligh">
     <div className="container-1">
       <div className="grid-2">
         <div className="center">
         <img src={require("../styles/img/Logo Y.png")} className="logo2" alt="TECHNORIAT" />
         </div>
         <div >
-          <h2> Projet Technoriat</h2><br/>
-          <p1 className="about-us">Technoriat est un programme de soutien permettant le développement de startups technologiques issues des résultats de la recherche scientifique et basées sur la propriété intellectuelle. Il vise à :<br/>
-- Ancrer la culture entrepreneuriale chez les chercheurs<br/>
-- Fluidifier et démocratiser le processus de brevetage<br/>
-- Combler le manque de services d’industrialisation (du prototype à l’industrialisation)<br/>
-Technoriat est porté conjointement par le cabinet OurDigitalFuture et l’Association des Technoparks Tunisiens en partenariat avec la RRO – CEA et plusieurs instituts de recherche tunisiens.<br/>
-Technoriat est financé par l’Union Européenne à travers le programme Innov’i – EU4Innovation mis en œuvre par Expertise France.
-</p1>
+          <h2 style={{fontWeight:900,fontSize:'35px'}}> PROJET TECHNORIAT</h2><br/>
+          <p style={{lineHeight:1.5}}className="about-us">La Tunisie jouit d'un environnement de recherche dynamique et productif. Nous observons l'émergence d'un écosystème de startups prometteur. Cependant, non seulement très peu proviennent de la valorisation de la recherche, mais un grand nombre d'innovations scientifiques et technologiques n'arrivent pas à sortir des laboratoires et à être commercialisées.<br/>
+Le projet TECHNORIAT a pour objectif de créer des startups technologiques issues des résultats scientifiques des centaines de laboratoires de recherche tunisiens.
+<br/>Le projet Technoriat, dans sa première version , consiste à :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- Sélectionner 24 entrepreneurs chercheurs, appelés TECHNORIATES<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- Accompagner 12 TECHNORIATES pour une première période d’incubation de 8 mois<br/>
+&nbsp;&nbsp;&nbsp;- Sélectionner 6 TECHNORIATES pour les accompagner pendant 12 mois supplémentaires à l’internationalisation (période d’accélération) .
+</p>
         </div>
       </div>
     </div>
   </section>
   {/* Services */}
   <section className="services">
-  <h2 style={{padding:"20px",textAlign:"center"}}>8 bonnes raisons de devenir TECHNORIATE</h2>
+  <h2 style={{padding:"20px",textAlign:"center",fontWeight:900,fontSize:'35px'}}>8 bonnes raisons de devenir TECHNORIATE</h2>
     <div className="container-1 grid-3 center">
       <div>
         <i className=" fa-solid fa-building-user fa-3x" />
