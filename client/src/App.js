@@ -15,6 +15,7 @@ import FactoriatP from "./Pages/FactoriatP";
 import Journal from "./Pages/Journal";
 import Addnewpost from "./Pages/Addnewpost";
 import Updatepostpage from "./Pages/Updatepostpage";
+import Deletepostpage from "./Pages/Deletepostpage";
 import JournalC from "./Components/JournalC";
 import Home from "./Pages/Home";
 import AdminProfil from "./Pages/AdminProfil";
@@ -51,6 +52,10 @@ function App() {
           <Route
             path="/Technoriat/Dashbord/Updatepost/:postId"
             element={<Updatepostpage />}
+          />
+          <Route
+            path="/Technoriat/Dashbord/Deletepost/:postId"
+            element={<Deletepostpage />}
           />
         </Route>
       </Routes>
