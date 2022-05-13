@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { login as loginAction } from "../actions/personActions";
+import "../styles/Login.css"
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -16,20 +17,25 @@ const Login = () => {
     dispatch(loginAction(data, nav));
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit(loginPerson)}>
-        <label>email</label>
-        <input required type="email" {...register("email")}></input>
+    <div className="vid-container">
+      <div class="inner-container">
+    <body className="login">
+      <form className="box" onSubmit={handleSubmit(loginPerson)}>
+        <h1 style={{backgroundColor:'#ffc80a',color:'rgba(0, 0, 0, 0.7)',fontWeight:'bold'}}>CONNEXION</h1>
+        <input className="Log" required placeholder="Email"type="email" {...register("email")}></input>
         <br />
-        <label>passeword</label>
-        <input required type="password" {...register("password")}></input>
+        
+        <input className="Log" required type="password" placeholder="Password" {...register("password")}></input>
         <br />
         {errors && <p>{errors}</p>}
-        <button>Login</button> <br />
+        <button className="btn btn-warning btn-sm " style={{width:'300px',marginLeft:'50px',fontSize:'16px',fontWeight:'bold'}}>Login</button> <br />
         <Link to="/Technoriat/Register">
-          Je ne suis pas encore enregistré(e)
+          <p>Je ne suis pas encore enregistré(e)?</p>
+          <p  style={{backgroundColor:'rgba(0, 0, 0, 0.7)',paddingBottom:'20px',fontSize:'16px',fontWeight:'600'}}>Register and Submit</p>
         </Link>
       </form>
+    </body>
+    </div>
     </div>
   );
 };
