@@ -37,7 +37,7 @@ export const updateUser = (userData, nav) => async (dispatch) => {
     const res = await axios.put(`/admin/api/user/${userData._id}`, userData);
     dispatch({ type: UPDATE_USER_SUCCESS, payload: res.data });
     // dispatch(getPosts());
-    //   nav("/Technoriat/Dashbord");
+    nav("/Technoriat/UsersList");
   } catch (error) {
     dispatch({ type: UPDATE_USER_FAILED, payload: error });
   }
