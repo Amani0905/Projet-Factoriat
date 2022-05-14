@@ -10,7 +10,7 @@ const Numbers = () => {
             </h1>
             </div>
         <br />
-        <div className="row">
+        <div className="row numb">
           <div className="column">
             <div className="card">
               <p><i class="fa-solid fa-handshake"></i></p>
