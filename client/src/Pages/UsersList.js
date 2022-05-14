@@ -26,19 +26,23 @@ const UsersList = () => {
 
   return (
     <div>
-      {clientList.map((el) => (
-        <>
-          <h4>{el.name}</h4>
-          <h6>{el.email}</h6>
-          <h6>{el.project}</h6>
-          <button
-            onClick={() => updateclient(el)}
-            style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
-          >
-            Changer le statu du projet
-          </button>
-        </>
-      ))}
+      {/* on va afficher que les utilisateurs mais pas les admins :  */}
+
+      {clientList.map((el) =>
+        el.role === "user" ? (
+          <>
+            <h4>{el.name}</h4>
+            <h6>{el.email}</h6>
+            <h6>{el.project}</h6>
+            <button
+              onClick={() => updateclient(el)}
+              style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
+            >
+              Changer le statu du projet
+            </button>
+          </>
+        ) : null
+      )}
       <br />
       <br />
 
