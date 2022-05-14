@@ -19,11 +19,6 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    font-family: Ubuntu-Bold, sans-serif;
-}
-
 /*---------------------------------------------*/
 a {
     font-family: 'Exo 2', sans-serif;
@@ -115,11 +110,6 @@ iframe {
     border: none !important;
 }
 
-
-/*---------------------------------------------*/
-.container {
-    max-width: 1200px;
-}
 
 
 

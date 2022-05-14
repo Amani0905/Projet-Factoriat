@@ -43,50 +43,82 @@ const Dashbordposts = () => {
 
   return (
     <div>
-      {postList.map((el) => (
-        <>
-          <h4>{el.title}</h4>
-          <h6>{el.shorttext}</h6>
-          <h6>{el.date}</h6>
-          {/* <h8>{el.content}</h8> */}
-          {/* <h8>{el.image}</h8> */}
-
-          <button
-            onClick={() => handledelete(el)}
-            style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
-          >
-            Supprimer
-          </button>
-
-          <button
-            onClick={() => handleupdate(el)}
-            style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
-          >
-            Update
-          </button>
-        </>
-      ))}
-      <br />
-      <br />
-      <button
-        onClick={logout}
-        style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
-      >
-        LOGOUT
+      <div className="nav-side-menu">
+    <div className="brand"><img
+            className="logo-Technoriat"
+            src={require("../styles/img/Logo Technoriat.png")}
+            alt="Technoriat"
+          /></div>
+    <i className="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content" />
+    <div className="menu-list">
+      <ul id="menu-content" className="menu-content collapse out">
+        <li>
+          <a href="/Technoriat/AdminProfil">
+          <i className="fa-solid fa-gauge fa-lg"></i> Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="/Technoriat/Dashbord">
+            <i className="fas fa-user-tie fa-lg" />Posts
+          </a>
+        </li>
+        <li>
+          <a href="/Technoriat/UsersList">
+            <i className="fa fa-users fa-lg" /> &nbsp;Users
+          </a>
+        </li>
+        <li>
+      <a><i className="fas fa-user-tie fa-lg" />&nbsp;<button
+        onClick={logout}>
+          &nbsp;Logout
       </button>
-      <br />
-      <Link to="/Technoriat/Dashbord/Addnewpost">
-        <button style={{ fontWeight: "bold", backgroundColor: "#adf2c2" }}>
-          Ajouter une nouvelle publication
-        </button>
-      </Link>
-      <br />
-
-      <Link to="/Technoriat/AdminProfil">
-        <button style={{ fontWeight: "bold", backgroundColor: "#adf2c2" }}>
-          Retour
-        </button>
-      </Link>
+      </a>
+          
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div className="dboard" style={{width:'75%',marginLeft: '20%',marginTop:'40px'}}>
+<Link to="/Technoriat/Dashbord/Addnewpost">
+  <button className="btn btn-success" style={{ fontWeight: "bold",marginLeft:'30%'}}>
+    ADD NEW POST
+  </button>
+</Link>
+<Link to="/Technoriat/AdminProfil">
+  <button className="btn btn-dark" style={{ fontWeight: "bold",marginLeft:'20px'}}>
+    BACK
+  </button>
+</Link>
+</div>
+      {postList.map((el) => (
+         <>
+         <article className="article">
+                 <header className="header">
+                   <div className="category">ARTICLE</div>
+                   <h1>
+                   {el.title}
+                   </h1>
+               <div className="meta">
+                 <span className="author"><span className="author-name">Publié {el.date}</span></span>
+         
+               </div>
+             </header>
+             <div>
+               <img className='article-img' src={require("../styles/img/article2.png")} alt="Article" ALIGN='left'/>
+             <p className="article-text" style={{color:'black'}}>{el.content}</p>
+               </div> 
+               <button className="btn btn-primary"onClick={() => handleupdate(el)} style={{ fontWeight: "bold",marginRight:'10px',marginLeft:'77%' }}>
+            UPDATE</button>
+                 
+         <button className="btn btn-danger "
+            onClick={() => handledelete(el)} style={{ fontWeight: "bold", }}>
+            DELETE</button>
+    
+          
+        </article>
+        </>  
+      ))}
+     
     </div>
   );
 };

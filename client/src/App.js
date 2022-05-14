@@ -24,7 +24,7 @@ import UsersList from "./Pages/UsersList";
 function App() {
   return (
     <div>
-      <Navbar />
+      {<Navbar />}
       <Routes>
         <Route path="/Technoriat/Acceuil" element={<Home />} />
         <Route path="/Technoriat/Journal/description" element={<JournalC />} />

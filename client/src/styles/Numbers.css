@@ -4,10 +4,10 @@
     padding: 0 10px;
   }
   
-  .row {margin: 20px 40px;}
+  .numb {margin: 20px 40px;}
   
   /* Clear floats after the columns */
-  .row:after {
+  .numb:after {
     content: "";
     display: table;
     clear: both;
