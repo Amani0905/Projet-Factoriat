@@ -9,7 +9,7 @@ import {
 } from "../actions/usertypes";
 
 const initState = {
-  userList: [],
+  clientList: [],
   loading: false,
   errors: null,
 };
@@ -19,15 +19,15 @@ const UserReducer = (state = initState, { type, payload }) => {
     case GET_USER_LOADING:
       return { ...state, loading: true };
     case GET_USER_SUCCESS:
-      return { ...state, userList: payload, loading: false, errors: false };
+      return { ...state, clientList: payload, loading: false, errors: false };
     case GET_USER_FAILED:
       return { ...state, loading: false, errors: payload };
     case GET_USER_BYID_SUCCESS:
-      return { ...state, userInfo: payload };
+      return { ...state, clientInfo: payload };
     case UPDATE_USER_LOADING:
       return { ...state, loading: true };
     case UPDATE_USER_SUCCESS:
-      return { ...state, userId: payload, loading: false, errors: false };
+      return { ...state, clientId: payload, loading: false, errors: false };
     case UPDATE_USER_FAILED:
       return { ...state, loading: false, errors: payload };
     default:

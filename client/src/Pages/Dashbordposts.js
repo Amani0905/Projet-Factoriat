@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutAction } from "../actions/personActions";
-import { deletePost, getPosts } from "../actions/postsActions";
+import { getPosts } from "../actions/postsActions";
 
 const Dashbordposts = () => {
   const dispatch = useDispatch();
@@ -18,10 +18,10 @@ const Dashbordposts = () => {
   }, [dispatch]);
   const { postList, loading } = useSelector((state) => state.post);
 
-  // Supprimer des posts : //
-  const delpost = (postId) => {
-    dispatch(deletePost(postId));
-  };
+  // // Supprimer des posts : //
+  // const delpost = (postId) => {
+  //   dispatch(deletePost(postId));
+  // };
 
   // // identifcation d'admin (exclusivement admin task) //
   // const { isAuth } = useSelector((state) => state.user);
