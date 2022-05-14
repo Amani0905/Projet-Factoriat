@@ -27,18 +27,25 @@ const Updateclient = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit(updateClient)}>
-        <label>Name</label>
-        <input required type="text" {...register("name")}></input> <br />
-        <label>Email</label>
-        <input required type="email" {...register("email")}></input>
+      <div>
+        <label>Name : </label>
+        {<>{clientInfoLS.name}</>}
         <br />
+        <label>Email : </label>
+        {<>{clientInfoLS.email}</>}
+      </div>
+      <form onSubmit={handleSubmit(updateClient)}>
         <label>Projet</label>
-        <input required type="text" {...register("project")}></input>
+        <select required type="text" {...register("project")}>
+          <option value='submitted'>submitted</option>
+          <option value='processed'>processed</option>
+          <option value='accepted'>accepted</option>
+          <option value='rejected'>rejected</option>
+        </select>
         <br />
         <button style={{ fontWeight: "bold", backgroundColor: "aqua" }}>
           Confirmer
-        </button>{" "}
+        </button>
         <br />
       </form>
 
