@@ -20,6 +20,7 @@ import JournalC from "./Components/JournalC";
 import Home from "./Pages/Home";
 import AdminProfil from "./Pages/AdminProfil";
 import UsersList from "./Pages/UsersList";
+import Updateclientpage from "./Pages/Updateclientpage";
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
           <Route path="/Technoriat/AdminProfil" element={<AdminProfil />} />
           <Route path="/Technoriat/Dashbord" element={<Dashbordposts />} />
           <Route path="/Technoriat/UsersList" element={<UsersList />} />
+          <Route
+            path="/Technoriat/UsersList/UpdateClient/:clientId"
+            element={<Updateclientpage />}
+          />
 
           <Route
             path="/Technoriat/Dashbord/Addnewpost"
