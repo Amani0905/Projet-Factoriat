@@ -1,17 +1,4 @@
 
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-  font-family: Ubuntu-Bold ;
-  src: url('../styles/fonts/ubuntu/Ubuntu-Bold.ttf');
-
-}
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 
 * {
     margin: 0px; 
@@ -131,7 +118,7 @@ iframe {
   padding: 15px;
   position: relative;
   /* background-color: #f2f2f2; */
-  background-image: url('./img/contact.png');
+  background-image: url('./img/contact-1.jpg');
   /* background-color:  #ffc600; */
   background-repeat: no-repeat;
   background-position: left center;
