@@ -23,11 +23,11 @@ const Profil = () => {
           <img src={require("../styles/img/avatar3.png")}/> 
           <p style={{color:"#6699CC",fontSize:'20px',fontWeight:'bold',marginTop:'10px',textAlign:'center'}}> 
           <h1 style={{fontSize:'30px',fontWeight:'bold'}}>Welcome Back<br/> {userInfo.name}</h1>
-      {userInfo.project === "submitted" ? (
+      {userInfo.project === "Submitted" ? (
         <p  >Votre projet a été bien soumis. Nous allons l'étudier rapidement afin de vous donner une réponse dans les plus brefs délais.</p>
-      ) : userInfo.project === "processed" ? (
+      ) : userInfo.project === "Processed" ? (
         <p >Votre projet est en cours de révision. Nous allons l'étudier rapidement afin de vous donner une réponse dans les plus brefs délais.</p>
-      ) : userInfo.project === "accepted" ? (
+      ) : userInfo.project === "Accepted" ? (
         <p >
           Félicitations. Votre projet a été accepté, notre équipe vous contactera 
           prochainement pour la suite.
