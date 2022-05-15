@@ -89,10 +89,10 @@ const Updateclient = () => {
         <br />
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Project Status</label>
         <select style={{marginLeft:'20px'}} required type="text" {...register("project")}>
-          <option value='submitted'>Submitted</option>
-          <option value='processed'>Processed</option>
-          <option value='accepted'>Accepted</option>
-          <option value='rejected'>Rejected</option>
+          <option value='Submitted'>Submitted</option>
+          <option value='Processed'>Processed</option>
+          <option value='Accepted'>Accepted</option>
+          <option value='Rejected'>Rejected</option>
         </select>
         <button className="btn btn-light "style={{paddingLeft:'20px',paddingRight:'20px',fontWeight:'bold',marginLeft:'55%',marginRight:'50px' }}>UPDATE</button>
         <Link to="/Technoriat/UsersList">
