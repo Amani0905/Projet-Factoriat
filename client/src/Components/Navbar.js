@@ -73,13 +73,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <button className="bt" type="button">
+            <a href="/Technoriat/Register" className=" btn btn-warning btn-sm  " role="button" ariaDisabled="true">Postulez ici
                 <i className="fa-solid fa-right-to-bracket fa-lg"> </i>
-                <Link className="text" to="/Technoriat/Login">
-                  Se connecter
-                </Link>
+                </a>
                 {/* <span className='text'>Se connecter</span > */}
-              </button>
+              
             </li>
           </ul>
         </div>

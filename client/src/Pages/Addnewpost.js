@@ -4,6 +4,8 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { addPost as addPostAction } from "../actions/postsActions";
 import { logoutAction } from "../actions/personActions";
+import"../styles/Addnewpost.css"
+
 
 const Addnewpost = () => {
   const dispatch = useDispatch();
@@ -49,31 +51,42 @@ const Addnewpost = () => {
           &nbsp;Logout
       </button>
       </a>
-          
+      
         </li>
       </ul>
     </div>
-      <form onSubmit={handleSubmit(addnewpost)}>
-        <label>Tittre</label>
-        <input required type="text" {...register("title")}></input> <br />
-        <label>Date</label>
-        <input required type="date" {...register("date")}></input> <br />
-        <label>Shorttext</label>
-        <input required type="text" {...register("shorttext")}></input>
+    </div>
+    <div style={{marginTop:'100px'}} className="dashboard bag">
+      <div>
+      <form  style={{backgroundColor:'rgba(0, 0, 0, 0.7)',height:'500px',width:'600px',marginLeft:'10%',paddingTop:'30px',paddingLeft:'20px'}}onSubmit={handleSubmit(addnewpost)}>
+        <h1 style={{marginBottom:'20px',color:'#ffc80a',backgroundColor:'rgba(0, 0, 0, 0.4)',marginRight:'20px'}}>ADD NEW POST</h1>
+        <label className="addp">Titre</label>
+        <input className="put" required type="text" {...register("title")}></input> <br />
+        <label className="addp">Date</label>
+        <input className="put"required type="date" {...register("date")}></input> <br />
+        <label className="addp" style={{paddingRight:'15px'}}>Shorttext</label>
+        <input className="put"required type="text" {...register("shorttext")}></input>
         <br />
-        <label>Contenu</label>
-        <input required type="text" {...register("content")}></input>
+        <label className="addp"style={{paddingRight:'41px'}}>Image</label>
+        <input className="put"required type="text" {...register("image")}></input>
         <br />
-        <label>Image</label>
-        <input required type="text" {...register("image")}></input>
+        <label className="addp" style={{paddingRight:'24px'}}>Contenu</label>
+        <textarea className="put"style={{width:'450px'}}required type="text" {...register("content")}></textarea>
         <br />
-        <button style={{fontWeight:'bold',backgroundColor:'aqua'}}>Add</button> <br />
-      </form>
-      <Link to="/Technoriat/Dashbord">
-        <button style={{fontWeight:'bold',backgroundColor:'pink'}}>Annuler</button>
+        
+        <button className="btn btn-light "style={{paddingLeft:'20px',paddingRight:'20px',fontWeight:'bold',marginLeft:'55%',marginRight:'50px' }}>ADD</button>
+        <Link to="/Technoriat/Dashbord">
+        <button className="btn btn-danger "style={{fontWeight:'bold'}}>CANCEL</button>
       </Link>
+        
+      </form>
+      </div>
+      
+      
+      </div>
     </div>
-    </div>
+    
+    
   );
 };
 

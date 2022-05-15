@@ -79,16 +79,17 @@ const Dashbordposts = () => {
     </div>
     </div>
     <div className="dboard" style={{width:'75%',marginLeft: '20%',marginTop:'40px'}}>
+    <Link to="/Technoriat/AdminProfil">
+  <button className="btn btn-dark" style={{ fontWeight: "bold",marginLeft:'24px'}}>
+  &#8249; BACK
+  </button>
+</Link>
 <Link to="/Technoriat/Dashbord/Addnewpost">
   <button className="btn btn-success" style={{ fontWeight: "bold",marginLeft:'30%'}}>
-    ADD NEW POST
+    + ADD NEW POST
   </button>
 </Link>
-<Link to="/Technoriat/AdminProfil">
-  <button className="btn btn-dark" style={{ fontWeight: "bold",marginLeft:'20px'}}>
-    BACK
-  </button>
-</Link>
+
 </div>
       {postList.map((el) => (
          <>

@@ -30,7 +30,7 @@ Environnement<br/>
   </div>
   <div className="square bg img3">
     <div className="content-2">
-      <div className="table">
+      <div className="table-1">
         <div className="table-cell">
         Science des Matériaux<br/>
         Textile technique<br/>

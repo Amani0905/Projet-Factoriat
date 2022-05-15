@@ -25,8 +25,8 @@ const personSchema = mongoose.Schema({
   },
   project: {
     type: String,
-    enum: ["submitted", "processed", "accepted", "rejected"],
-    default: "submitted",
+    enum: ["Submitted", "Processed", "Accepted", "Rejected"],
+    default: "Submitted",
   },
 });
 module.exports = mongoose.model("person", personSchema);
