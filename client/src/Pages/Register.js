@@ -22,9 +22,12 @@ const Register = () => {
       <form className="box-1" onSubmit={handleSubmit(registernewperson)}>
       <h1 style={{backgroundColor:'#ffc80a',color:'rgba(0, 0, 0, 0.7)',fontWeight:'bold'}}>S'INSCRIRE & POSTULER</h1>
         <input className="Log" required placeholder="Nom & Prénom" type="text" {...register("name")}></input>
+        <input className="Log" required placeholder="Téléphone" type="number" {...register("phone")}></input>
         <input className="Log" required placeholder="Adresse" type="text" {...register("address")}></input>
         <input className="Log" required placeholder="Email" type="email" {...register("email")}></input>
         <input className="Log" required placeholder="Mot de passe" type="password" {...register("password")}></input>
+        <input className="Log" required placeholder="Titre du projet" type="text" {...register("titre")}></input>
+        <input className="Log" required placeholder="Fichier" type="text" {...register("fichier")}></input>
         <button className="btn btn-warning btn-sm " style={{width:'300px',marginLeft:'50px',fontSize:'16px',fontWeight:'bold'}}>Register & Submit</button><br/>
         <Link to="/Technoriat/Login">
         <p  style={{backgroundColor:'rgba(0, 0, 0, 0.7)',marginTop:'10px',paddingTop:'1px',paddingBottom:'5px',fontSize:'16px',fontWeight:'600'}}>Je suis déjà enregistré(e)</p>

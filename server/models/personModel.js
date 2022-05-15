@@ -14,6 +14,10 @@ const personSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  phone: {
+    type: Number,
+    required: true,
+  },
   address: {
     type: String,
     required: true,
@@ -23,10 +27,18 @@ const personSchema = mongoose.Schema({
     enum: ["user", "admin"],
     default: "user",
   },
+  titre: {
+    type: String,
+    required: true,
+  },
   project: {
     type: String,
     enum: ["Submitted", "Processed", "Accepted", "Rejected"],
     default: "Submitted",
+  },
+  fichier: {
+    type: String,
+    required: true,
   },
 });
 module.exports = mongoose.model("person", personSchema);
