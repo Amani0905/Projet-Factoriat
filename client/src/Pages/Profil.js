@@ -19,23 +19,27 @@ const Profil = () => {
   return (
   
     <div className="container py-0">
-        <div className="welcome shadow p-3 mb-5 mt-5 rounded"style={{backgroundColor:'rgba(0, 0, 0, 0.7)',width:'700px',marginLeft:'150px'}}><img src={require("../styles/img/avatar3.png")} style={{height:'200px',paddingBottom:'20px',paddingTop:'20px'}}/> <p style={{color:"black",fontSize:'20px',fontWeight:'bold',marginTop:'40px',textAlign:'center'}}> <h1 style={{fontSize:'30px',fontWeight:'bold'}}>Welcome Back<br/> {userInfo.name}</h1>
+        <div className="welcome shadow p-3 mb-5 mt-5 rounded description"style={{backgroundColor:'rgba(0, 0, 0, 0.7)',width:'800px',marginLeft:'150px'}}>
+          <img src={require("../styles/img/avatar3.png")}/> 
+          <p style={{color:"#6699CC",fontSize:'20px',fontWeight:'bold',marginTop:'10px',textAlign:'center'}}> 
+          <h1 style={{fontSize:'30px',fontWeight:'bold'}}>Welcome Back<br/> {userInfo.name}</h1>
       {userInfo.project === "submitted" ? (
-        <p  style={{fontSize:'30px'}}>Votre projet a été bien soumis. Nous allons l'étudier rapidement afin de vous donner une réponse dans les plus brefs délais.</p>
+        <p  >Votre projet a été bien soumis. Nous allons l'étudier rapidement afin de vous donner une réponse dans les plus brefs délais.</p>
       ) : userInfo.project === "processed" ? (
-        <p style={{fontSize:'30px'}}>Votre projet est en cours de révision. Nous allons l'étudier rapidement afin de vous donner une réponse dans les plus brefs délais.</p>
+        <p >Votre projet est en cours de révision. Nous allons l'étudier rapidement afin de vous donner une réponse dans les plus brefs délais.</p>
       ) : userInfo.project === "accepted" ? (
-        <p style={{fontSize:'30px'}}>
+        <p >
           Félicitations. Votre projet a été accepté, notre équipe vous contactera 
           prochainement pour la suite.
         </p>
       ) : (
-        <p>Malheureusement,votre projet a été refusé.Nous vous remercions pour votre compréhension</p>
+        <p >Malheureusement,votre projet a été refusé. Nous vous remercions pour votre compréhension</p>
       )}</p>
       
       <button className="btn btn-warning "style={{fontWeight:'bold',marginLeft:'100px'}}onClick={logout}>LOGOUT</button>
       </div>
-      <span style={{marginLeft:'100px'}}> Si vous rencontrez le moindre problème durant la soumission n'hésitez pas à nous contacter </span><a style={{marginTop:'20px',marginBottom:'20px'}}href="/Technoriat/contact" className=" btn btn-dark btn-sm  " role="button" ariaDisabled="true">Contactez-nous</a>
+      <span style={{marginLeft:'100px'}}> Si vous rencontrez le moindre problème durant la soumission 
+      n'hésitez pas à nous contacter </span><a style={{marginTop:'20px',marginBottom:'20px'}}href="/Technoriat/contact" className=" btn btn-dark btn-sm  " role="button" ariaDisabled="true">Contactez-nous</a>
       </div>
       );
 };

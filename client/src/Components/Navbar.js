@@ -22,7 +22,7 @@ const Navbar = () => {
             setIsNavExpanded(!isNavExpanded);
           }}
         >
-          {/* icon from heroicons.com */}
+          {/* icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -44,37 +44,37 @@ const Navbar = () => {
           <ul>
             <li>
               <Link className="nav" to="/Technoriat/acceuil">
-                Acceuil
+                ACCEUIL
               </Link>
             </li>
             <li>
               <Link className="nav" to="/Technoriat/Technoriat">
-                Technoriat
-              </Link>
-            </li>
-            <li>
-              <Link className="nav" to="/Technoriat/equipe">
-                Equipe
+                TECHNORIAT
               </Link>
             </li>
             <li>
               <Link className="nav" to="/Technoriat/Factoriat">
-                Factoriat
+                FACTORIAT
+              </Link>
+            </li>
+            <li>
+              <Link className="nav" to="/Technoriat/equipe">
+                EQUIPE
               </Link>
             </li>
             <li>
               <Link className="nav" to="/Technoriat/Journal">
-                Journal
+                ACTUALITE
               </Link>
             </li>
             <li>
               <Link className="nav" to="/Technoriat/contact">
-                Contact
+                CONTACT
               </Link>
             </li>
             <li>
-            <a href="/Technoriat/Register" className=" btn btn-warning btn-sm  " role="button" ariaDisabled="true">Postulez ici
-                <i className="fa-solid fa-right-to-bracket fa-lg"> </i>
+            <a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i className="fa fa-right-to-bracket fa-lg"> </i>CONNEXION
+                
                 </a>
                 {/* <span className='text'>Se connecter</span > */}
               
