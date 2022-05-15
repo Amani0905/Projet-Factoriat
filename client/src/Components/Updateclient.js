@@ -76,6 +76,15 @@ const Updateclient = () => {
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Full Name : {<span style={{color:'white'}}>{clientInfoLS.name}</span>}</label>
         <br />
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Email : {<span style={{color:'white'}}>{clientInfoLS.email}</span>} </label>
+
+        <br />
+        <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Title : {<span style={{color:'white'}}>{clientInfoLS.titre}</span>} </label>
+       
+        <br />
+        <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>File : {<span style={{color:'white'}}>{clientInfoLS.fichier}</span>} </label>
+       
+        <br />
+        <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Phone : {<span style={{color:'white'}}>{clientInfoLS.phone}</span>} </label>
        
         <br />
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Project Status</label>

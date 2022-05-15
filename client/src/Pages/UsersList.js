@@ -82,6 +82,9 @@ const UsersList = () => {
       <th scope="col">NAME</th>
       <th scope="col">EMAIL</th>
       <th scope="col">PROJECT STATUS</th>
+      <th scope="col">TITLE</th>
+      <th scope="col">FILE</th>
+      <th scope="col">PHONE</th>
       <th scope="col">EDIT STATUS</th>
     </tr>
   </thead>
@@ -91,6 +94,11 @@ const UsersList = () => {
       <td>{el.name}</td>
       <td>{el.email}</td>
       <td>{el.project}</td>
+      <td>{el.titre}</td>
+      <td>{el.fichier}</td>
+      <td>{el.phone}</td>
+
+      
       <button className="btn btn-info"
               onClick={() => updateclient(el)}
               style={{ fontWeight: "bold"}}
