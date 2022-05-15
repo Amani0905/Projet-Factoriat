@@ -35,9 +35,11 @@ const JournalT = () => {
           
         </>
       ))}
-      <h3 style={{marginTop:40,color:'black',fontSize:16,marginBottom:40,width:'80%'}} >A travers cette platforme,Technoriate souhaite soutenir les chercheurs entrepreneurs pour vulgariser leurs résultats de recherche, partager leurs succès et exprimer leurs opinions. Nous sommes convaincus que la Technoriatie peut prendre une meilleure place dans le développement de la Tunisie.</h3>
-    <a style={{marginTop:'10px',marginLeft:'0%'}}href="/Technoriat/contact" className=" btn btn-warning btn-sm  " role="button" ariaDisabled="true">Contactez-nous</a>
+      <div>
+      <h3 style={{marginTop:40,color:'black',fontSize:16,marginBottom:20,width:'80%',marginLeft:'10%'}} >A travers cette platforme,Technoriate souhaite soutenir les chercheurs entrepreneurs pour vulgariser leurs résultats de recherche, partager leurs succès et exprimer leurs opinions. Nous sommes convaincus que la Technoriatie peut prendre une meilleure place dans le développement de la Tunisie.</h3>
       
+    <a style={{marginLeft:'45%'}}href="/Technoriat/contact" className=" btn btn-warning btn-sm  " role="button" ariaDisabled="true">Contactez-nous</a>
+    </div>
     </div>
     
     </body>

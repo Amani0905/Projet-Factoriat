@@ -56,7 +56,9 @@ background-color:#ffc80a;
     width: 100%;
   }
   .navigation-menu li a {
-    width:max-content
+    width:max-content;
+    font-weight: 500;
+    font-size: 15px;
 
   }
   .hamburger {
