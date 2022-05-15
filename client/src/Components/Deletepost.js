@@ -42,13 +42,13 @@ const Deletepost = () => {
       <br/>
       <button
         onClick={() => delpost(postInfoLS._id)}
-        style={{ fontWeight: "bold", backgroundColor: "#f7867e" }}
+        className="btn btn-danger "style={{fontWeight:'bold',marginLeft:'70%',marginRight:'20px'}}
       >
-        Supprimer
+        DELETE
       </button>
       <Link to="/Technoriat/Dashbord">
-        <button style={{ fontWeight: "bold", backgroundColor: "pink" }}>
-          Annuler
+        <button className="btn btn-primary "style={{fontWeight:'bold'}}>
+          CANCEL
         </button>
       </Link>
     </div>

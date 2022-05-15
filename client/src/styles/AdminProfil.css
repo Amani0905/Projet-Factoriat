@@ -116,6 +116,7 @@
   .bg-purple {
     background-color:#ffc80a ;
     color: white;
+    text-size-adjust: 200%;
   }
   .dash{
       justify-content: center;
@@ -123,12 +124,12 @@
      
   }
   .welcome{
-      background-color: grey;
       padding-top:25px ;
-      padding-bottom:25px ;
+      padding-bottom:20px;
       padding-right: 30px;
       padding-left: 30px;
       border-radius: 5px;
+      display:flex;
   }
   
 @media (max-width: 767px) {

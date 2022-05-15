@@ -64,17 +64,16 @@ const AdminProfil = () => {
             <hr />
           </div>
         </div>
-        <div className="welcome"><h1 style={{color:"black",fontSize:'24px'}}>Welcome Back Admin,your dashboard is ready!</h1>
-        <p style={{color:"white",fontSize:'18px'}}>Great job,your affiliate job is ready to go!You can access to users, add, update, delete posts and update project status using this dashboard.</p></div>
+        <div className="welcome shadow p-3 mb-5 bg-white rounded"><img src={require("../styles/img/Admin.png")} style={{height:'220px',paddingBottom:'40px'}}/> <p style={{color:"black",fontSize:'20px',fontWeight:'bold',marginTop:'40px',textAlign:'center'}}> Welcome Back Admin,your dashboard is ready!<br/> Great job, your affiliate job is ready to go!You can access to users, update project status, add, update and delete posts using this dashboard</p>
+       </div>
         <div className="row dash">
-        
-          <div className="col-xs col-sm col-md col-lg p-2">
+        <div className="col-xs col-sm col-md col-lg p-2">
             <a className="text-decoration-none" href="/Technoriat/UsersList">
               <div className="card p-3 shadow bg-purple text-center border-0">
                 <div className="card-body">
-                  <i className="fa fa-bookmark-o fa-2x" aria-hidden="true" />
+                  <i class="fa fa-bars-progress fa-2x"></i>
                   <hr />
-                  <p className="card-title lead">USERS</p>
+                  <p className="card-title lead">USERS AND PROJECTS STATUS</p>
                 </div>
               </div>
             </a>
@@ -90,17 +89,7 @@ const AdminProfil = () => {
               </div>
             </a>
           </div>
-          <div className="col-xs col-sm col-md col-lg p-2">
-            <a className="text-decoration-none" href="#">
-              <div className="card p-3 shadow bg-purple text-center border-0">
-                <div className="card-body">
-                  <i class="fa fa-bars-progress fa-2x"></i>
-                  <hr />
-                  <p className="card-title lead">PROJECTS</p>
-                </div>
-              </div>
-            </a>
-          </div>
+          
         </div></div>
           </div>
     </div>
