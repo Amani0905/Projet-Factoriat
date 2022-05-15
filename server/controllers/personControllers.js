@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 //@access PUBLIC
 exports.register = async (req, res) => {
   try {
-    const { name, email, password, address } = req.body;
+    const { name, email, password, phone, address, titre, fichier } = req.body;
     const existEmail = await Person.findOne({ email });
     if (existEmail)
       return res.status(400).json({ msg: "Email already exist." });
@@ -17,7 +17,10 @@ exports.register = async (req, res) => {
       name,
       email,
       password: hashedPw,
+      phone,
       address,
+      titre,
+      fichier,
     });
     const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, {
       expiresIn: "7d",
@@ -60,4 +63,3 @@ exports.getPersonData = async (req, res) => {
     res.status(500).json({ msg: "somthing went wrong!" });
   }
 };
-
