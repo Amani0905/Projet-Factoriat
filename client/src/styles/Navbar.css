@@ -16,37 +16,48 @@
   .nav{
     color: white !important;
   }
-.bt{
+.hbutton{
 color:black;
 background-color:#ffc80a;
-border-radius: 4px;
-  }
 
- .bt:hover {
+  }
+.fa-right-to-bracket{
+  color:black;
+  padding-right: 10px;
+}
+
+
+ .hbutton:hover {
     background-color:white;
     transition: 0.2s;
-    color: #ffc80a;
-    border-radius: 4px;
+    color: black;
+  
 }
 .nav:hover{
     color: grey!important;
-    border-bottom: 2px solid #eab80a;
+    border-bottom: 2px solid #ffc80a;
     transition: 0.1s;
 }
 
   .navigation-menu ul {
     display: flex;
     padding: 0px;
+    width:100%;
   }
   .navigation-menu li {
 
     list-style-type: none;
     margin: 0 1rem;
+    width:100px;
   }
   .navigation-menu li,.nav {
     text-decoration: none;
     display: block;
     width: 100%;
+  }
+  .navigation-menu li a {
+    width:max-content
+
   }
   .hamburger {
 
@@ -70,7 +81,7 @@ border-radius: 4px;
   .logo-Technoriat{
     height: 46px !important;
     width: 150px !important;
-    margin-right: 300px;
+    margin-right: 100px;
     
     
   }
@@ -81,17 +92,19 @@ border-radius: 4px;
 
     .navigation-menu ul {
       display: none;
+      text-align: center;
+     
     }
 
     .navigation-menu ul {
       position: absolute;
       z-index: 5000;
-      top: 60px;
-      left: 0;
+
+      left: 50%;
 
       flex-direction: column;
 
-      width: 100%;
+      width: 50%;
       height: calc(100vh - 6px);
       background-color: white;
       border-top: 1px solid black;
@@ -102,12 +115,18 @@ border-radius: 4px;
       }
     .navigation-menu li {
       text-align: center!important;
-      margin: 0px;
+      margin: auto;
+     
+    }
+    .navigation-menu li a {
+      width:500px;
+    
+  
     }
     .navigation-menu li,.nav {
       color: black;
       width: 100%;
-      padding: 1.5rem 0;
+      padding: 1rem 0;
     }
     .navigation-menu li:hover {
       background-color: #eee;
@@ -117,6 +136,7 @@ border-radius: 4px;
   
     .navigation-menu ul {
       display: none;
+      margin-top: 29px;
     }
  
     .navigation-menu.expanded ul {
