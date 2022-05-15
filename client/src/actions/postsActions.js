@@ -38,6 +38,16 @@ export const getPostById = (postId) => async (dispatch) => {
 export const addPost = (postData, nav) => async (dispatch) => {
   try {
     dispatch({ type: ADD_POST_LOADING });
+
+        //cloud name:bilel
+        //preset:Technoriat
+        const form= new FormData();
+        form.append("file",postData.file);
+        form.append("upload_preset","Technoriat");
+       const rep = await axios.post("https://api.cloudinary.com/v1_1/bilel/upload",form)
+       postData.image=rep.data.secure_url
+
+    
     const res = await axios.post("/admin/api/post", postData);
     dispatch({ type: ADD_POST_SUCCESS, payload: res.data });
     nav("/Technoriat/Dashbord");
