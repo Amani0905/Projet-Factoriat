@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,8 +12,9 @@ const Register = () => {
   useEffect(() => {
     if (isAuth) nav("/Technoriat/Login");
   }, [isAuth, nav]);
+  const [file, setFile] = useState();
   const registernewperson = (data) => {
-    dispatch(registerAction(data, nav));
+    dispatch(registerAction({...data,file}, nav));
   };
   return (
     <div className="vid-container">
@@ -27,7 +28,10 @@ const Register = () => {
         <input className="Log" required placeholder="Email" type="email" {...register("email")}></input>
         <input className="Log" required placeholder="Mot de passe" type="password" {...register("password")}></input>
         <input className="Log" required placeholder="Titre du projet" type="text" {...register("titre")}></input>
-        <input className="Log" required placeholder="Fichier" type="text" {...register("fichier")}></input>
+        {/* <input className="Log" required placeholder="Fichier" type="text" {...register("fichier")}></input> */}
+        <input className="Log" required type="file"
+              accept=".pdf"
+              onChange={(e) => setFile(e.target.files[0])}></input>
         <button className="btn btn-warning btn-sm " style={{width:'300px',marginLeft:'50px',fontSize:'16px',fontWeight:'bold'}}>Register & Submit</button><br/>
         <Link to="/Technoriat/Login">
         <p  style={{backgroundColor:'rgba(0, 0, 0, 0.7)',marginTop:'10px',paddingTop:'1px',paddingBottom:'5px',fontSize:'16px',fontWeight:'600'}}>Je suis déjà enregistré(e)</p>

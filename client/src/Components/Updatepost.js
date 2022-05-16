@@ -1,5 +1,5 @@
 // import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
@@ -21,8 +21,9 @@ const Updatepost = () => {
   const { register, handleSubmit } = useForm({
     defaultValues: { ...postInfoLS },
   });
+  const [file, setFile] = useState();
   const updatePost = (data) => {
-    dispatch(UpdatepostAction({ ...data, _id: postId }, nav));
+    dispatch(UpdatepostAction({ ...data, _id: postId,file }, nav));
   };
   const logout = (e) => {
     e.preventDefault();
@@ -79,7 +80,14 @@ const Updatepost = () => {
         <input className="put"required type="text" {...register("shorttext")}></input>
         <br />
         <label className="addp"style={{paddingRight:'41px'}}>Image</label>
-        <input className="put"required type="text" {...register("image")}></input>
+        {/* <input className="put"required type="text" {...register("image")}></input> */}
+        <input style={{color:'red' }}
+              className="put"
+              required
+              type="file"
+              accept="image/*"
+              onChange={(e) => setFile(e.target.files[0])}
+            ></input>
         <br />
         <label className="addp" style={{paddingRight:'24px'}}>Contenu</label>
         <textarea className="put"style={{width:'450px'}}required type="text" {...register("content")}></textarea>
