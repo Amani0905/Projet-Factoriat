@@ -112,6 +112,9 @@
   .text-purple {
     color: var(--primary);
   }
+  .card-body,.lead{
+    color:#000
+  }
   
   .bg-purple {
     background-color:#ffc80a ;

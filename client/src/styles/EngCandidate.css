@@ -8,7 +8,7 @@
 .text {
     font-size: 14px;
     font-weight: 600;
-    color: #69686a;
+    color:white;
     text-align: justify;
     
 }
@@ -19,4 +19,16 @@
 }
 .mt-3  {
     text-align: center;
+}
+.colortitle {
+    color:#ffc80a
+    
+}
+.colortext {
+    color:black;
+    font-weight:900;
+    font-size: 14px;
+}
+.text-truncate{
+    font-size: 22px;
 }

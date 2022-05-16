@@ -65,8 +65,8 @@ alert("If you agree with the terms, check the Agree check box");
       <div className="container-contact100-form-btn">
         <button className="contact100-form-btn">
           <span>
-            <i className="fa fa-paper-plane-o m-r-6" aria-hidden="true" />
-            Soumettre
+            <i className="fa fa-paper-plane-o m-r-1" aria-hidden="true" />
+            &nbsp;&nbsp;Soumettre
           </span>
         </button>
       </div>

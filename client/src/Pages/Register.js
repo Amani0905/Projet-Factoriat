@@ -17,7 +17,7 @@ const Register = () => {
   };
   return (
     <div className="vid-container">
-      <div className="inner-container" style={{height:'700px',top:'35px'}}>
+      <div className="inner-container" style={{height:'680px',top:'15px'}}>
     <body className="login">
       <form className="box-1" onSubmit={handleSubmit(registernewperson)}>
       <h1 style={{backgroundColor:'#ffc80a',color:'rgba(0, 0, 0, 0.7)',fontWeight:'bold'}}>S'INSCRIRE & POSTULER</h1>

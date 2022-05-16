@@ -35,7 +35,7 @@ const Deletepost = () => {
       </div>
     </header>
     <div>
-      <img className='article-img' src={require("../styles/img/article2.png")} alt="Article" ALIGN='left'/>
+      <img className='article-img' src={postInfoLS.image} alt="Article" ALIGN='left'/>
     <p className="article-text" style={{color:'black'}}>{postInfoLS.content}</p>
       </div> 
       </article>
