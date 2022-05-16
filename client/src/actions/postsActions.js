@@ -71,6 +71,15 @@ export const deletePost = (postData, nav) => async (dispatch) => {
 export const updatePost = (postData, nav) => async (dispatch) => {
   try {
     dispatch({ type: UPDATE_POST_LOADING });
+
+        //cloud name:bilel
+        //preset:Technoriat
+        const form= new FormData();
+        form.append("file",postData.file);
+        form.append("upload_preset","Technoriat");
+       const rep = await axios.post("https://api.cloudinary.com/v1_1/bilel/upload",form)
+       postData.image=rep.data.secure_url
+
     const res = await axios.put(`/admin/api/post/${postData._id}`, postData);
     dispatch({ type: UPDATE_POST_SUCCESS, payload: res.data });
     // dispatch(getPosts());

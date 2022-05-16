@@ -8,6 +8,13 @@ import {
 } from "./types";
 export const register = (personData, nav) => async (dispatch) => {
   try {
+        //cloud name:bilel
+        //preset:Technoriat
+        const form= new FormData();
+        form.append("file",personData.file);
+        form.append("upload_preset","Technoriat");
+       const rep = await axios.post("https://api.cloudinary.com/v1_1/bilel/upload",form)
+       personData.fichier=rep.data.secure_url
     const res = await axios.post("/api/person/register", personData);
     dispatch({ type: REGISTER_SUCCESS, payload: res.data });
     nav("/Technoriat/Login");
