@@ -21,7 +21,7 @@ const JournalT = () => {
       {postList.map((el) => (
         <>
           <figure className="snip1529">
-        <img src={require("../styles/img/article2.png")} alt="Article" />
+        <img style={{width:'400px',height:'200px'}}src={el.image} alt="Article" />
         <div className="date"><i class="fa-solid fa-newspaper"></i></div>
         <figcaption>
           <h3>{el.title}</h3>

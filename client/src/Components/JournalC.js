@@ -36,7 +36,7 @@ const { postList, loading } = useSelector((state) => state.post);
       </div>
     </header>
     <div>
-      <img className='article-img' src={require("../styles/img/article2.png")} alt="Article" ALIGN='left'/>
+      <img className='article-img' src={el.image} alt="Article" ALIGN='left'/>
     <p className="article-text" style={{color:'black'}}>{el.content}</p>
       </div> 
       </article>

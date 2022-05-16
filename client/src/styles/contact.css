@@ -130,7 +130,7 @@ iframe {
   width: 550px;
   background: transparent;
   padding: 50px 20px 100px 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   margin-top: 100px;
   /*margin-left: 400px;
@@ -301,9 +301,12 @@ textarea.input100 {
 .checkbox{
     color: white;
     font-family: 'Exo 2', sans-serif;
-    font-size:12px;
+    font-size:14px;
     text-align: justify!important;
     
+}
+label.checkbox{
+  padding-left: 20px;
 }
 
 /*------------------------------------------------------------------

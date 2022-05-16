@@ -38,15 +38,18 @@
   }
   
   .showcase:hover .content-1 {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  .home {
+    color:black;
   }
   
   .content-1 {
     position: absolute;
     z-index: 1;
     top: 10%;
-    left: 50%;
+    left: 40%;
     margin-top: 105px;
     margin-left: -200px;
     width: 400px;
@@ -59,6 +62,7 @@
   .content-1 .logo {
     height: 180px;
     width: 180px;
+    margin-left: 200px;
   }
   .logo2{
       height:200px;
@@ -68,6 +72,7 @@
   .content-1 .title {
     font-size: 2.2rem;
     margin-top: 1rem;
+    width: 650px;
     
 
   }
@@ -75,6 +80,7 @@
   .content-1 .text {
     line-height: 1.7;
     margin-top: 1rem;
+    width: 650px;
 
 
 

@@ -20,7 +20,9 @@ const Addnewpost = () => {
   };
 
   return (
+    
     <div>
+      {/*Dashboard style*/}
       <div className="nav-side-menu">
         <div className="brand">
           <img
@@ -101,7 +103,7 @@ const Addnewpost = () => {
             ></input>{" "}
             <br />
             <label className="addp" style={{ paddingRight: "15px" }}>
-              Shorttext
+              ShortText
             </label>
             <input
               className="put"
@@ -114,7 +116,7 @@ const Addnewpost = () => {
               Image
             </label>
             {/* <input className="put"required type="text" {...register("image")}></input> */}
-            <input
+            <input style={{color:'red' }}
               className="put"
               required
               type="file"
@@ -123,7 +125,7 @@ const Addnewpost = () => {
             ></input>
             <br />
             <label className="addp" style={{ paddingRight: "24px" }}>
-              Contenu
+              Text
             </label>
             <textarea
               className="put"
