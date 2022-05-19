@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     position: fixed;
-    overflow: hidden;
     top:0;
     padding: 0.5rem 0rem;
     background-color: black;
@@ -106,7 +105,7 @@ background-color:#ffc80a;
       z-index: 5000;
 
       left: 50%;
-
+      align-items: center;
       flex-direction: column;
 
       width: 50%;
@@ -124,7 +123,7 @@ background-color:#ffc80a;
      
     }
     .navigation-menu li a {
-      width:500px;
+      width:450px;
     
   
     }
