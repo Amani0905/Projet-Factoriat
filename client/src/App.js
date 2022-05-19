@@ -1,6 +1,6 @@
 import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Footer from "./Components/Footer.js";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import Register from "./Pages/Register";
@@ -21,12 +21,19 @@ import Home from "./Pages/Home";
 import AdminProfil from "./Pages/AdminProfil";
 import UsersList from "./Pages/UsersList";
 import Updateclientpage from "./Pages/Updateclientpage";
+import ScrollToTop from "react-scroll-to-top";
+import Scroll from "./Components/Scroll";
 
 function App() {
   return (
     <div>
+      <ScrollToTop smooth component={<Scroll />} />
       {<Navbar />}
+     
+      
       <Routes>
+      
+      <Route path="/" element={<Navigate to='/Technoriat/Acceuil' />} />
         <Route path="/Technoriat/Acceuil" element={<Home />} />
         <Route path="/Technoriat/Journal/description" element={<JournalC />} />
         <Route path="/Technoriat/Journal" element={<Journal />} />

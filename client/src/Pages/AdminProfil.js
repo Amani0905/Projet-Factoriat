@@ -18,7 +18,7 @@ const AdminProfil = () => {
   }, [isAuth, nav]);
 
   return (
-    <div>
+    <div style={{paddingTop:'50px'}}>
     <div className="nav-side-menu">
     <div className="brand"><img
             className="logo-Technoriat"
@@ -44,7 +44,7 @@ const AdminProfil = () => {
           </a>
         </li>
         <li>
-      <a><i className="fas fa-user-tie fa-lg" />&nbsp;<button
+      <a><i className="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;<button
         onClick={logout}>
           &nbsp;Logout
       </button>

@@ -58,7 +58,7 @@ const Updateclient = () => {
           </a>
         </li>
         <li>
-      <a><i className="fas fa-user-tie fa-lg" />&nbsp;<button
+      <a><i className="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;<button
         onClick={logout}>
           &nbsp;Logout
       </button>
