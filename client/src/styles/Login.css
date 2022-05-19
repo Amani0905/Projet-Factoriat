@@ -1,11 +1,14 @@
 .box-1{
     position:absolute;
-    height:100%;
+  
     width:100%;
     color:#fff;
     background-color: rgba(0, 0, 0, 0.7);
     padding:20px 0px;
     box-sizing:content-box;
+    margin-top: 40px;
+    
+    
   }
   .box-1 h1{
     text-align:center;

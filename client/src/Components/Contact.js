@@ -28,10 +28,12 @@ const Contact = () => {
     e.target.reset();
     setTimeout(() => setResult(false), 5000);
     if(false === document.getElementById("agree").checked)
-{
-alert("If you agree with the terms, check the Agree check box");
-}
+    {
+    alert("If you agree with the terms, check the Agree check box");
+    }
+    
   };
+
 
   return (
   
@@ -70,7 +72,7 @@ alert("If you agree with the terms, check the Agree check box");
           </span>
         </button>
       </div>
-      {result ? <h5>Votre Message a été envoyé avec succès</h5> : null}
+      {result ? <h3 style={{color:'white',textAlign:'center'}}>Votre Message a été envoyé avec succès</h3> : null}
     </form>
   </div>
 </div>

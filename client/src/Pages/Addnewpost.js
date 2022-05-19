@@ -21,7 +21,7 @@ const Addnewpost = () => {
 
   return (
     
-    <div>
+    <div style={{paddingTop:'50px'}}>
       {/*Dashboard style*/}
       <div className="nav-side-menu">
         <div className="brand">
@@ -56,7 +56,7 @@ const Addnewpost = () => {
             </li>
             <li>
               <a>
-                <i className="fas fa-user-tie fa-lg" />
+              <i className="fa-solid fa-arrow-right-from-bracket"></i>
                 &nbsp;<button onClick={logout}>&nbsp;Logout</button>
               </a>
             </li>
