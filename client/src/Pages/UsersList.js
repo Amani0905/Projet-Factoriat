@@ -89,14 +89,13 @@ const UsersList = () => {
                 className="table table-dark"
               >
                 <thead>
-                  <tr style={{ color: "#ffc80a",paddingRight:'0px',paddingLeft:'0',textAlign:'center'}}>
-                    <th style={{minWidth:'150px',paddingRight:'0px'}}scope="col">NAME</th>
-                    <th style={{minWidth:'200px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">EMAIL</th>
+                  <tr style={{ color: "#ffc80a",paddingRight:'0px',paddingLeft:'0'}}>
+                    <th style={{minWidth:'170px',paddingRight:'0px'}}scope="col">NAME</th>
+                    <th style={{minWidth:'220px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">EMAIL</th>
                     <th style={{minWidth:'160px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">PROJECT STATUS</th>
-                    <th style={{minWidth:'200px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">TITLE</th>
-                    <th style={{minWidth:'100px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">FILE</th>
+                    <th style={{minWidth:'220px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">TITLE</th>
                     <th style={{minWidth:'150px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">PHONE</th>
-                    <th style={{minWidth:'150px',paddingLeft:'0px',paddingRight:'20px'}}scope="col">EDIT STATUS</th>
+                    <th style={{minWidth:'120px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">EDIT STATUS</th>
                   </tr>
                 </thead>
                 </table>
@@ -109,21 +108,19 @@ const UsersList = () => {
             <tbody className="table-responsive" style={{ backgroundColor: "rgba(0, 0, 0, 0.7)"}}>
             <tr style={{ marginTop:'0px',height:'60px',verticalAlign:'center'}}>
                       <td style={{ color: "#ffc80a",minWidth:'170px',paddingLeft: "10px"}}>{el.name}</td>
-                      <td style={{ color: "white",minWidth:'220px'}}>{el.email}</td>
+                      <td style={{ color: "white",minWidth:'240px'}}>{el.email}</td>
                       <td style={{ color: "white",minWidth:'160px'}}>{el.project}</td>
-                      <td style={{ color: "white",minWidth:'200px'}}>{el.titre}</td>
-                      <td style={{ color: "white",minWidth:'130px'}}>
-                        <a style={{color:'white'}}href={el.fichier}>Download File</a>
-                      </td>
-                      <td style={{ color: "white",minWidth:'130px'}}>{el.phone}</td>
-                      
-                      <button
+                      <td style={{ color: "white",minWidth:'280px'}}>{el.titre}</td>
+                      <td style={{ color: "white",minWidth:'150px'}}>{el.phone}</td>
+                      <td style={{minWidth:'120px',paddingRight:'0px'}}>
+                        <button
                         className="btn btn-primary btn-sm"
                         onClick={() => updateclient(el)}
                         style={{ fontWeight: "bold",marginTop:'15px' }}
                       >
-                        UPDATE 
+                        UPDATE STATUS
                       </button>
+                      </td>
                       
                     </tr>
                 </tbody>
