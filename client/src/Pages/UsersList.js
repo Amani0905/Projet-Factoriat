@@ -88,14 +88,14 @@ const UsersList = () => {
                 style={{ backgroundColor: "rgba(0, 0, 0, 0.7)",marginBottom:'0px'  }}
                 className="table table-dark"
               >
-                <thead>
+                <thead className="table-responsive">
                   <tr style={{ color: "#ffc80a",paddingRight:'0px',paddingLeft:'0'}}>
                     <th style={{minWidth:'170px',paddingRight:'0px'}}scope="col">NAME</th>
                     <th style={{minWidth:'220px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">EMAIL</th>
                     <th style={{minWidth:'160px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">PROJECT STATUS</th>
-                    <th style={{minWidth:'220px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">TITLE</th>
-                    <th style={{minWidth:'150px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">PHONE</th>
-                    <th style={{minWidth:'120px',paddingLeft:'0px',paddingRight:'0px'}}scope="col">EDIT STATUS</th>
+                    <th style={{minWidth:'280px',paddingLeft:'50px',paddingRight:'0px'}}scope="col">TITLE</th>
+                    <th style={{minWidth:'150px',paddingLeft:'30px',paddingRight:'0px'}}scope="col">PHONE</th>
+                    <th style={{minWidth:'120px',paddingLeft:'30px',paddingRight:'0px'}}scope="col">EDIT STATUS</th>
                   </tr>
                 </thead>
                 </table>
