@@ -2,9 +2,12 @@ import { useState } from "react";
 import React from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const { isAuth } = useSelector((state) => state.user);
+
   return (
     <div>
       <nav className="navigation">
@@ -73,9 +76,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-            <a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i className="fa fa-right-to-bracket fa-lg"> </i>CONNEXION
+              { (isAuth === false) ? (<a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i className="fa fa-right-to-bracket fa-lg"> </i>CONNEXION
                 
-                </a>
+                </a>) : (<a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i className="fa fa-right-to-bracket fa-lg"> </i>PROFIL
+                
+                </a>)}
                 {/* <span className='text'>Se connecter</span > */}
               
             </li>
