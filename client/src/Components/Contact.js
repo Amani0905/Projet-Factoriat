@@ -35,6 +35,7 @@ alert("If you agree with the terms, check the Agree check box");
 }
   };
 
+
   return (
   
   <div className="container-contact100">
@@ -72,7 +73,7 @@ alert("If you agree with the terms, check the Agree check box");
           </span>
         </button>
       </div>
-      {result ? <h5>Votre Message a été envoyé avec succès</h5> : null}
+      {result ? <h3 style={{color:'white',textAlign:'center'}}>Votre Message a été envoyé avec succès</h3> : null}
     </form>
   </div>
 </div>

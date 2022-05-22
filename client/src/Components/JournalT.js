@@ -15,7 +15,7 @@ const JournalT = () => {
   return (
 
     <body className="news">
-     <h1 style={{backgroundColor:"#ffc80a",marginTop:20,fontWeight:900,fontSize:'35px',paddingLeft:'28%',paddingRight:'28%'}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1> 
+     <h1 style={{backgroundColor:"#ffc80a",marginTop:30,fontWeight:900,fontSize:'35px',paddingLeft:'28%',paddingRight:'28%'}} >ACTUALITES DES ACTIVITES TECHNORIATE</h1> 
     <div className="news">
     
       {postList.map((el) => (

@@ -150,6 +150,13 @@ ol.process-chart > li:nth-of-type(6n+5) {
 ol.process-chart > li:nth-of-type(6n+5):after {
     border-left-color: #ffc80a;
 }
+ol.process-chart > li:nth-of-type(6n+6) {
+    background-color: white;
+}
+
+ol.process-chart > li:nth-of-type(6n+6):after {
+    border-left-color: white;
+}
 
 /*** MEDIA QUERIES ***/
 @media only screen and ( max-width: 40em ) {
@@ -191,27 +198,29 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 
     /*** PRIMARY ***/
     ol.process-chart > li:nth-of-type(6n+1):after {
-        border-top-color: #a2ed56;
+        border-top-color: gray;
     }
 
     /*** SECONDARY ***/
     ol.process-chart > li:nth-of-type(6n+2):after {
-        border-top-color: #83e4e2;
+        border-top-color:  #ffc80a;
     }
 
     /*** TERTIARY ***/
     ol.process-chart > li:nth-of-type(6n+3):after {
-        border-top-color: #fd6470;
+        border-top-color: white;
     }
 
     /*** QUATERNARY ***/
     ol.process-chart > li:nth-of-type(6n+4):after {
-        border-top-color: #fca858;
+        border-top-color: gray;
     }
 
     /*** QUINARY ***/
     ol.process-chart > li:nth-of-type(6n+5):after {
-        border-top-color: #fddc32;
+        border-top-color: #ffc80a;
     }
-
+    ol.process-chart > li:nth-of-type(6n+6):after {
+        border-top-color: white;
+    }
 }
