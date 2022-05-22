@@ -78,7 +78,7 @@ const Navbar = () => {
             <li>
               { (isAuth === false) ? (<a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i className="fa fa-right-to-bracket fa-lg"> </i>CONNEXION
                 
-                </a>) : (<a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i className="fa fa-right-to-bracket fa-lg"> </i>PROFIL
+                </a>) : (<a href="/Technoriat/Register" className=" btn  btn-sm hbutton  " role="button" ariaDisabled="true"><i > </i>PROFIL
                 
                 </a>)}
                 {/* <span className='text'>Se connecter</span > */}
