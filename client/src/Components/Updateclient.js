@@ -70,7 +70,7 @@ const Updateclient = () => {
     </div>
     <div style={{marginTop:'100px'}} className="dashboard bag">
       
-      <form style={{backgroundColor:'rgba(0, 0, 0, 0.7)',height:'450px',width:'600px',marginLeft:'10%',paddingTop:'30px',paddingLeft:'40px'}}onSubmit={handleSubmit(updateClient)}>
+      <form style={{backgroundColor:'rgba(0, 0, 0, 0.7)',height:'400px',width:'600px',marginLeft:'10%',paddingTop:'30px',paddingLeft:'40px'}}onSubmit={handleSubmit(updateClient)}>
       <h1 style={{marginBottom:'20px',color:'white',backgroundColor:'rgba(0, 0, 0, 0.4)',marginRight:'20px'}}>UPDATE PROJECT STATUS</h1>
       
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Full Name : {<span style={{color:'white'}}>{clientInfoLS.name}</span>}</label>
@@ -80,8 +80,8 @@ const Updateclient = () => {
         <br />
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Title : {<span style={{color:'white'}}>{clientInfoLS.titre}</span>} </label>
        
-        <br />
-        <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>File : {<span style={{color:'white'}}><a href={clientInfoLS.fichier}>Download file</a></span>} </label>
+        {/* <br />
+        <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>File : {<span style={{color:'white'}}><a href={clientInfoLS.fichier}>Download file</a></span>} </label> */}
        
         <br />
         <label style={{backgroundColor:'rgba(0, 0, 0, 0.4)',marginBottom:'20px',color:'#ffc80a',fontWeight:'400',fontSize:'20px'}}>Phone : {<span style={{color:'white'}}>{clientInfoLS.phone}</span>} </label>
