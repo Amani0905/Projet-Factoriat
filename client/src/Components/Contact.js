@@ -8,7 +8,8 @@ const Contact = () => {
   
   const sendEmail = (e) => {
     e.preventDefault();
-
+    const box = document.getElementById("agree");
+    if (box.checked===true) {
     emailjs
       .sendForm(
         "service_36646nc",
@@ -24,10 +25,11 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    setResult(true);
+      setResult(true);
     e.target.reset();
     setTimeout(() => setResult(false), 5000);
-    if(false === document.getElementById("agree").checked)
+      }
+    else
 {
 alert("If you agree with the terms, check the Agree check box");
 }
