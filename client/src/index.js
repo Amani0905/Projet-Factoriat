@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "http://https://technoriat.herokuapp.com/";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
