@@ -17,7 +17,7 @@ exports.addPost = async (req, res) => {
 // @access PUBLIC
 exports.getPost = async (req, res) => {
   try {
-    const Products = await Post.find();
+    const Products = await Post.find().sort({date:-1})
     res.status(201).json(Products);
   } catch (error) {
     res.status(500).json({ msg: "something went wrong" });
