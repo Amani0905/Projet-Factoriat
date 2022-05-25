@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navigation">
-        <a href="http://localhost:3000/Technoriat/acceuil">
+        <a href="/Technoriat/acceuil">
           <img
-            href="http://localhost:3000/Technoriat/acceuil"
+            href="/Technoriat/acceuil"
             className="logo-Technoriat"
             src={require("../styles/img/Logo Technoriat.png")}
             alt="Technoriat"
